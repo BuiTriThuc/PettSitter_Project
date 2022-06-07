@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,kBAAkB;EAC/B,WAAW,EAAE,yBAAyB;EACtC,WAAW,EAAE,oBAAoB;EACjC,WAAW,EAAE,oBAAoB;CAClC",
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,oBAAoB;CAClC",
     "sources": [
         "../pages/lost&found.scss",
         "../common/_base.scss"
