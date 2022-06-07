@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,kBAAkB;EAC/B,WAAW,EAAE,yBAAyB;EACtC,WAAW,EAAE,oBAAoB;EACjC,WAAW,EAAE,oBAAoB;CAClC",
     "sources": [
-        "../pages/pet_spa.scss"
+        "../pages/pet_spa.scss",
+        "../common/_base.scss"
     ],
     "names": [],
     "file": "pet_spa.css"
