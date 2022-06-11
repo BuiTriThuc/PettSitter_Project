@@ -1,3 +1,4 @@
+@import "../common/base";
 .container {
   max-width: 1280px;
 }
@@ -30,12 +31,12 @@
             display: inline-block;
             position: relative;
             i {
-              font-size: 16px;
+              font-size: $text-base;
             }
             a {
               color: $color-white-light;
-              font-size: 20px;
-              font-weight: 500;
+              font-size: $text-md;
+              font-weight: $text-semiBold;
               display: inline-block;
               text-decoration: none;
               transition: all 0.4s;
@@ -61,10 +62,10 @@
               list-style: none;
               transition: all 0.4s;
               li > a {
-                font-size: 16px;
-                font-weight: 500;
+                font-size: $text-base;
+                font-weight: $text-semiBold;
                 padding: 5px 20px;
-                font-size: 14px;
+                font-size: $text-sm;
                 display: block;
                 color: #1f1f25;
                 margin: 0 10px;
@@ -115,8 +116,8 @@
           display: inline-block;
           a {
             color: $color-white-light;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: $text-md;
+            font-weight: $text-semiBold;
             display: inline-block;
             text-decoration: none;
             transition: all 0.4s;
@@ -130,7 +131,7 @@
         .button-report {
           background: $color-orange-800;
           color: $color-black-light;
-          font-weight: 600;
+          font-weight: $text-semiBold;
           padding: 10px 20px;
           border-radius: 15px;
           box-shadow: 0 0 0 3em $color-orange-800 inset;
