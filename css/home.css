@@ -9,11 +9,6 @@ html {
           box-sizing: border-box;
 }
 
-html {
-  padding: 0;
-  margin: 0;
-}
-
 .container {
   max-width: 1280px;
 }
@@ -218,5 +213,10 @@ html {
   color: #f7fff7;
   background: transparent;
   border: 1px solid #f7fff7;
+}
+
+html {
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=home.css.map */
