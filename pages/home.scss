@@ -4,3 +4,38 @@ html {
   padding: 0;
   margin: 0;
 }
+
+.carousel {
+  .carousel-control-prev {
+    i {
+      color: $color-white-light;
+      font-size: 20px;
+      border: 1px solid $color-white-light;
+      padding: 20px 20px;
+      border-radius: 50%;
+      transition: all 0.4s;
+    }
+  }
+  .carousel-control-prev:hover i {
+    background: $color-orange-800;
+    border: 1px solid $color-orange-800;
+    transform: translateX(-18px);
+    transition: all 0.4s;
+  }
+  .carousel-control-next {
+    i {
+      color: $color-white-light;
+      font-size: 20px;
+      border: 1px solid $color-white-light;
+      padding: 20px 20px;
+      border-radius: 50%;
+      transition: all 0.4s;
+    }
+  }
+  .carousel-control-next:hover i {
+    background: $color-orange-800;
+    border: 1px solid $color-orange-800;
+    transform: translateX(18px);
+    transition: all 0.4s;
+  }
+}

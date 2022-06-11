@@ -20,12 +20,11 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  max-width: 1280px;
-}
-
 .header {
   background: #52b69a;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 
 .header .row {
@@ -229,5 +228,43 @@ html {
 html {
   padding: 0;
   margin: 0;
+}
+
+.carousel .carousel-control-prev i {
+  color: #f7fff7;
+  font-size: 20px;
+  border: 1px solid #f7fff7;
+  padding: 20px 20px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.carousel .carousel-control-prev:hover i {
+  background: #eb5e28;
+  border: 1px solid #eb5e28;
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.carousel .carousel-control-next i {
+  color: #f7fff7;
+  font-size: 20px;
+  border: 1px solid #f7fff7;
+  padding: 20px 20px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.carousel .carousel-control-next:hover i {
+  background: #eb5e28;
+  border: 1px solid #eb5e28;
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 /*# sourceMappingURL=home.css.map */
