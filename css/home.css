@@ -13,4 +13,210 @@ html {
   padding: 0;
   margin: 0;
 }
+
+.container {
+  max-width: 1280px;
+}
+
+.header {
+  background: #52b69a;
+}
+
+.header .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .row .header-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .row .header-left .header-logo {
+  width: 15%;
+  cursor: pointer;
+}
+
+.header .row .header-left .header-logo img {
+  width: 100%;
+}
+
+.header .row .header-left .header-nav {
+  width: 80%;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  text-align: center;
+}
+
+.header .row .header-left .header-nav .nav-content {
+  padding: 0;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item i {
+  font-size: 16px;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item a {
+  color: #f7fff7;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-right: 10px;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item a:hover {
+  color: #333533;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item .submenu {
+  min-width: 240px;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -2;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 12px 0;
+  border-radius: 4px;
+  list-style: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item .submenu li > a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px;
+  font-size: 14px;
+  display: block;
+  color: #1f1f25;
+  margin: 0 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item .submenu li:hover a {
+  color: #eb5e28;
+  background: rgba(83, 81, 80, 0.07);
+}
+
+.header .row .header-left .header-nav .nav-content .nav-item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  z-index: 90;
+}
+
+.header .row .header-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .row .header-right .search-box {
+  width: 45%;
+  position: relative;
+}
+
+.header .row .header-right .search-box input {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.header .row .header-right .search-box input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+.header .row .header-right .search-box input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+.header .row .header-right .search-box input::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+.header .row .header-right .search-box input::placeholder {
+  padding-left: 10px;
+}
+
+.header .row .header-right .search-box i {
+  position: absolute;
+  top: 12px;
+  left: 210px;
+  cursor: pointer;
+}
+
+.header .row .header-right .login-button {
+  width: 55%;
+  text-align: center;
+}
+
+.header .row .header-right .login-button .nav-login {
+  display: inline-block;
+}
+
+.header .row .header-right .login-button .nav-login a {
+  color: #f7fff7;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-right: 10px;
+}
+
+.header .row .header-right .login-button .nav-login a:hover {
+  opacity: 0.75;
+  color: #333533;
+}
+
+.header .row .header-right .login-button .button-report {
+  background: #eb5e28;
+  color: #333533;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 0 3em #eb5e28 inset;
+          box-shadow: 0 0 0 3em #eb5e28 inset;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.header .row .header-right .login-button .button-report:hover {
+  -webkit-box-shadow: 0 0 0 1px #f7fff7 inset;
+          box-shadow: 0 0 0 1px #f7fff7 inset;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  color: #f7fff7;
+  background: transparent;
+  border: 1px solid #f7fff7;
+}
 /*# sourceMappingURL=home.css.map */
