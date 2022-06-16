@@ -492,6 +492,11 @@ html {
   transition: 0.4s;
 }
 
+.petHotel {
+  padding: 100px 0px;
+  background-color: #f8f9fa;
+}
+
 .petHotel .row-pethotel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,16 +504,76 @@ html {
 }
 
 .petHotel .row-pethotel .pethotel-left {
-  width: 50%;
+  width: 40%;
+  margin-right: 60px;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .petHotel .row-pethotel .pethotel-left .pethotel-title p {
   font-size: 20px;
+  color: #636363;
+  margin-bottom: 30px;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 60px 0 #0000001a;
+          box-shadow: 0 0 60px 0 #0000001a;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item .pethotel-icon {
+  width: 20%;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item .pethotel-icon i {
+  width: 100%;
+  font-size: 80px;
+  color: #34a0a4;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item .pethotel-text {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item .pethotel-text h3 {
+  font-weight: 700;
+  color: #262626;
+  font-size: 24px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item .pethotel-text p {
+  font-size: 16px;
   color: #636363;
   margin-bottom: 15px;
 }
 
 .petHotel .row-pethotel .pethotel-right {
   width: 50%;
+}
+
+.petHotel .row-pethotel .pethotel-right a img {
+  width: 100%;
 }
 /*# sourceMappingURL=home.css.map */
