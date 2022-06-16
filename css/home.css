@@ -268,6 +268,10 @@ html {
   transition: all 0.4s;
 }
 
+.lostAndFound {
+  margin: 100px 0px;
+}
+
 .lostAndFound .row-lost {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,7 +350,7 @@ html {
 }
 
 .home-spa {
-  margin: 50px 0px;
+  margin: 100px 0px;
 }
 
 .home-spa .spa-title {
@@ -528,8 +532,6 @@ html {
 }
 
 .petHotel .row-pethotel .pethotel-left .pethotel-content .pethotel-item {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,5 +624,62 @@ html {
 .petHotel .pethotel-right a img {
   width: 100%;
   border-radius: 15px;
+}
+
+.home-shop {
+  background-color: #f8f9fa;
+  padding: 80px 0px;
+}
+
+.home-shop .shop-title {
+  margin-bottom: 30px;
+}
+
+.home-shop .shop-title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-left: 12px;
+}
+
+.home-shop .row-shop .row-shop-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.home-shop .row-shop .row-shop-top .row-shop-item {
+  width: 23%;
+}
+
+.home-shop .row-shop .row-shop-top .row-shop-item .card .card-img img {
+  width: 100%;
+}
+
+.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body h5 {
+  text-align: center;
+}
+
+.home-shop .row-shop .row-shop-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home-shop .row-shop .row-shop-bottom .row-shop-item {
+  width: 23%;
+}
+
+.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-img img {
+  width: 100%;
+}
+
+.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-body h5 {
+  text-align: center;
 }
 /*# sourceMappingURL=home.css.map */
