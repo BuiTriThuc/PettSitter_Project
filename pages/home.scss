@@ -349,9 +349,19 @@ html {
         width: 23%;
 
         .card {
+          border-radius: 10px;
+          transition: all 0.2s ease-in-out;
           .card-img {
+            overflow: hidden;
             img {
               width: 100%;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              transition: 0.4s;
+            }
+            img:hover {
+              transform: scale(1.05, 1.05);
+              transition: 0.4s;
             }
           }
           .card-body {
@@ -361,20 +371,31 @@ html {
             .shop-infor {
               display: flex;
               .shop-price {
-                width: 30%;
-                color: $color-orange-800;
-                font-size: 24px;
+                width: 45%;
+                color: #e63946;
+                font-size: 20px;
+                margin-top: 10px;
               }
               .shop-orders {
-                width: 70%;
+                width: 60%;
                 text-align: right;
                 i {
-                  font-size: 10px;
+                  font-size: 14px;
                   color: #ffd166;
+                  height: 100%;
                 }
               }
             }
+            p {
+              font-size: 16px;
+              color: #636363;
+              margin-bottom: 15px;
+            }
           }
+        }
+        .card:hover {
+          box-shadow: 0 20px 20px -10px #00000033;
+          transition: all 0.2s ease-in-out;
         }
       }
     }
@@ -384,16 +405,49 @@ html {
       .row-shop-item {
         width: 23%;
         .card {
+          transition: all 0.2s ease-in-out;
+          border-radius: 10px;
           .card-img {
+            overflow: hidden;
             img {
               width: 100%;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              transition: 0.4s;
+            }
+            img:hover {
+              transform: scale(1.05, 1.05);
+              transition: 0.4s;
             }
           }
           .card-body {
-            h5 {
-              text-align: center;
+            p {
+              font-size: 16px;
+              color: #636363;
+              margin-bottom: 20px;
+            }
+            .shop-infor {
+              a {
+                border: 1px solid $color-orange-600;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: $color-black-light;
+                font-size: 16px;
+                background-color: $color-orange-600;
+                font-weight: 400;
+                border-radius: 20px;
+                transition: 0.4s;
+              }
+              a:hover {
+                opacity: 0.75;
+                transition: 0.4s;
+              }
             }
           }
+        }
+        .card:hover {
+          box-shadow: 0 20px 20px -10px #00000033;
+          transition: all 0.2s ease-in-out;
         }
       }
     }
