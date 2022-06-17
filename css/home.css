@@ -663,6 +663,28 @@ html {
   text-align: center;
 }
 
+.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor .shop-price {
+  width: 30%;
+  color: #eb5e28;
+  font-size: 24px;
+}
+
+.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor .shop-orders {
+  width: 70%;
+  text-align: right;
+}
+
+.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor .shop-orders i {
+  font-size: 10px;
+  color: #ffd166;
+}
+
 .home-shop .row-shop .row-shop-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
