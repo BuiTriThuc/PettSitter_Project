@@ -1,1 +1,30 @@
 @import "../common/base";
+@import "../layouts/header";
+
+.enter-infor{
+    padding: 10%;
+    .row-enter{
+        display: flex;
+        .enter-left{
+            width: 30%;
+        }
+        .enter-right{
+            width: 70%;
+            .enter-title{
+
+            }
+            .enter-main{
+                .form-item{
+                    display: flex;
+                    .form-top-left{
+                        width: 35%;
+                        margin-right: 10px;
+                    }
+                    .form-top-right{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
