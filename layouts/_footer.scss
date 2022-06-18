@@ -1,6 +1,7 @@
+@import "../common/base";
 footer {
   padding: 60px 0px 60px 0px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(#283845, 0.8);
   color: white;
   .row-footer {
     display: flex;
@@ -55,14 +56,15 @@ footer {
           color: white;
         }
         a:hover {
-          opacity: 0.75;
+          opacity: 0.65;
+          color: $color-orange-600;
         }
       }
     }
   }
 }
 .footer-coppyright {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(#202c39, 0.8);
   .row-coppyright {
     display: flex;
     align-items: center;
