@@ -187,19 +187,20 @@ html {
   color: #333533;
 }
 
-.header .row .header-right .header-right-item .button-report {
+.header .row .header-right .header-right-item .btn-report {
   background: #f48c06;
   color: #333533;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 0 3em #f48c06 inset;
           box-shadow: 0 0 0 3em #f48c06 inset;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
-.header .row .header-right .header-right-item .button-report:hover {
+.header .row .header-right .header-right-item .btn-report:hover {
   -webkit-box-shadow: 0 0 0 1px #f7fff7 inset;
           box-shadow: 0 0 0 1px #f7fff7 inset;
   -webkit-transition: all 300ms ease;

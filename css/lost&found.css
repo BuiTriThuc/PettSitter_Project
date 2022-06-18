@@ -187,19 +187,20 @@ html {
   color: #333533;
 }
 
-.header .row .header-right .header-right-item .button-report {
+.header .row .header-right .header-right-item .btn-report {
   background: #f48c06;
   color: #333533;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 0 3em #f48c06 inset;
           box-shadow: 0 0 0 3em #f48c06 inset;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
-.header .row .header-right .header-right-item .button-report:hover {
+.header .row .header-right .header-right-item .btn-report:hover {
   -webkit-box-shadow: 0 0 0 1px #f7fff7 inset;
           box-shadow: 0 0 0 1px #f7fff7 inset;
   -webkit-transition: all 300ms ease;
@@ -210,35 +211,92 @@ html {
 }
 
 .enter-infor {
-  padding: 10%;
+  background: url("../img/lostbanner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 10%;
+  height: 750px;
+}
+
+.enter-infor span {
+  color: red;
 }
 
 .enter-infor .row-enter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .enter-infor .row-enter .enter-left {
-  width: 30%;
+  width: 50%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.enter-infor .row-enter .enter-left h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.enter-infor .row-enter .enter-left p {
+  font-size: 36px;
+  margin-bottom: 0px;
 }
 
 .enter-infor .row-enter .enter-right {
-  width: 70%;
+  width: 45%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.enter-infor .row-enter .enter-right .enter-title {
+  margin-bottom: 30px;
+}
+
+.enter-infor .row-enter .enter-right .enter-title h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: green;
+}
+
+.enter-infor .row-enter .enter-right .enter-title p {
+  font-size: 17px;
+  color: #636363;
+  margin-bottom: 15px;
+}
+
+.enter-infor .row-enter .enter-right .enter-main .radio-box {
+  margin-bottom: 30px;
 }
 
 .enter-infor .row-enter .enter-right .enter-main .form-item {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .enter-infor .row-enter .enter-right .enter-main .form-item .form-top-left {
-  width: 35%;
+  width: 50%;
   margin-right: 10px;
 }
 
 .enter-infor .row-enter .enter-right .enter-main .form-item .form-top-right {
-  width: 60%;
+  width: 50%;
+}
+
+.enter-infor .row-enter .enter-right .enter-main .btn-enter {
+  text-align: center;
+}
+
+.enter-infor .row-enter .enter-right .enter-main .btn-enter button {
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=lost&found.css.map */

@@ -1,30 +1,76 @@
 @import "../common/base";
 @import "../layouts/header";
 
-.enter-infor{
-    padding: 10%;
-    .row-enter{
-        display: flex;
-        .enter-left{
-            width: 30%;
-        }
-        .enter-right{
-            width: 70%;
-            .enter-title{
-
-            }
-            .enter-main{
-                .form-item{
-                    display: flex;
-                    .form-top-left{
-                        width: 35%;
-                        margin-right: 10px;
-                    }
-                    .form-top-right{
-                        width: 60%;
-                    }
-                }
-            }
-        }
+.enter-infor {
+  background: url("../img/lostbanner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 10%;
+  height: 750px;
+  span{
+    color: red;
+  }
+  .row-enter {
+    display: flex; 
+    justify-content: space-around;
+    
+    .enter-left {
+      width: 50%;
+      text-align: center;
+      padding-top: 100px;
+      h1{
+        font-size: 40px;
+        font-weight: 600;
     }
+    p{
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+    }
+    .enter-right {
+      width: 45%;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      .enter-title {
+        margin-bottom: 30px;
+        h3 {
+          font-size: 36px;
+          font-weight: 600;
+          margin-bottom: 15px;
+          color: green;
+        }
+        p{
+            font-size: 17px;
+          color: #636363;
+          margin-bottom: 15px;
+        }
+      }
+      .enter-main {
+        .radio-box {
+          margin-bottom: 30px;
+        }
+        .form-item {
+          margin-bottom: 20px;
+          display: flex;
+          .form-top-left {
+            width: 50%;
+            margin-right: 10px;
+          }
+          .form-top-right {
+            width: 50%;
+          }
+        }
+        .btn-enter {
+          text-align: center;
+          button{
+            padding: 10px 20px;
+            border-radius: 10px;
+          }
+          
+        }
+      }
+    }
+  }
 }

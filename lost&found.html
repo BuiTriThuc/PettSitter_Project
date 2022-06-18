@@ -37,10 +37,10 @@
               <nav class="navbar d-none d-md-block">
                 <ul class="nav-content">
                   <li class="nav-item">
-                    <a href="#">Home</a>
+                    <a href="./home.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#">Lost&Found</a>
+                    <a href="./lost&found.html">Lost&Found</a>
                   </li>
                   <li class="nav-item">
                     <a href="#">
@@ -72,7 +72,8 @@
             <div class="header-right-item">
               <i class="fa-solid fa-magnifying-glass"></i>
               <li class="nav-login"><a href="#">Login</a></li>
-              <button class="button-report">REPORT PET</button>
+              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
+
               <i
                 class="fa-solid fa-cart-shopping"
                 style="font-size: 24px; margin-left: 22px"
@@ -86,57 +87,60 @@
       <div class="container">
         <div class="row-enter">
           <div class="enter-left">
-            <h3>Start find your pet</h3>
-            <h3>Then</h3>
-            <h3>Take it comeback home</h3>
+            <h1>Start find your pet</h1>
+            <p>Then</p>
+            <h1>Take it comeback home</h1>
           </div>
           <div class="enter-right">
             <div class="enter-title">
               <h3>Start Your Free Alert</h3>
               <p>
-                Enter your pet's information to instantly <br />
+                Enter your pet's information to instantly
                 start spreading local awareness.
               </p>
             </div>
             <div class="enter-main">
               <h5>Pet status <span>*</span></h5>
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-                checked
-              />
-              <label class="form-check-label" for="flexRadioDefault2">
-                Lost
-              </label>
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label class="form-check-label" for="flexRadioDefault1">
-                Found/Stray
-              </label>
+              <div class="radio-box">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                  
+                />
+                <label class="form-check-label" for="flexRadioDefault2" style="margin-right:5px">
+                  Lost
+                </label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Found/Stray
+                </label>
+              </div>
 
               <div class="form-item">
                 <div class="form-top-left">
-                  <label class="form-label">Pet Name</label>
+                  <label class="form-label">Pet Name <span>*</span></label>
                   <input type="text" class="form-control" />
                 </div>
                 <div class="form-top-right">
-                  <label class="form-label">Nearest Address Last Seen </label>
+                  <label class="form-label">Nearest Address Last Seen <span>*</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
               <div class="form-item">
                 <div class="form-top-left">
-                  <label class="form-label">Contact Email</label>
+                  <label class="form-label">Contact Email <span>*</span></label>
                   <input type="text" class="form-control" />
                 </div>
                 <div class="form-top-right">
-                  <label class="form-label">Create Password</label>
+                  <label class="form-label">Create Password <span>*</span></label>
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -145,6 +149,7 @@
                 type="checkbox"
                 value=""
                 id="flexCheckDefault"
+                style="margin-bottom: 30px;"
               />
               <label class="form-check-label" for="flexCheckDefault">
                 Sign me up for local lost & found pet alerts
