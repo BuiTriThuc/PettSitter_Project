@@ -1,8 +1,9 @@
 @import "../common/base";
 
 .header {
-  background-color: rgba($color-green-700, 0.8) ;
-  position: fixed;
+  background-color: rgba($color-green-700, 0.8);
+  position: sticky;
+  top: 0;
   z-index: 99;
   width: 100%;
   .row {
@@ -95,7 +96,7 @@
       .header-right-item {
         width: 80%;
         text-align: right;
-        i{
+        i {
           margin-right: 20px;
           color: $color-white-light;
           cursor: pointer;
@@ -116,8 +117,8 @@
             color: $color-black-light;
           }
         }
-        
-         .btn-report{
+
+        .btn-report {
           background: $color-orange-600;
           color: $color-black-light;
           font-weight: $text-semiBold;
