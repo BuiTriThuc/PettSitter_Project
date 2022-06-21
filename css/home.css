@@ -419,50 +419,64 @@ html {
   margin: 100px 0px;
 }
 
-.lostAndFound .row-lost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 60px 0px;
+@media screen and (max-width: 1200px) {
+  .lostAndFound .row .lost-left {
+    width: 100%;
+    margin: auto;
+  }
 }
 
-.lostAndFound .row-lost .lost-left {
-  width: 50%;
-}
-
-.lostAndFound .row-lost .lost-left img {
+.lostAndFound .row .lost-left img {
   width: 100%;
   border-radius: 10px;
 }
 
-.lostAndFound .row-lost .lost-right {
-  width: 50%;
-  padding-left: 50px;
+@media screen and (max-width: 1200px) {
+  .lostAndFound .row .lost-left img {
+    width: 100%;
+  }
 }
 
-.lostAndFound .row-lost .lost-right .lost-title h1 {
+.lostAndFound .row .lost-right {
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lostAndFound .row .lost-right .lost-title {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.lostAndFound .row .lost-right .lost-title h1 {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-.lostAndFound .row-lost .lost-right .lost-title p {
+.lostAndFound .row .lost-right .lost-title p {
   font-size: 20px;
   color: #636363;
   margin-bottom: 15px;
 }
 
-.lostAndFound .row-lost .lost-right .lost-content {
+.lostAndFound .row .lost-right .lost-content {
   margin-bottom: 20px;
 }
 
-.lostAndFound .row-lost .lost-right .lost-content span {
+@media screen and (max-width: 1200px) {
+  .lostAndFound .row .lost-right .lost-content {
+    text-align: center;
+  }
+}
+
+.lostAndFound .row .lost-right .lost-content span {
   font-size: 18px;
   margin-bottom: 10px;
   color: #636363;
 }
 
-.lostAndFound .row-lost .lost-right .lost-content span i {
+.lostAndFound .row .lost-right .lost-content span i {
   border: 2px solid #eb5e28;
   padding: 4px;
   border-radius: 50%;
@@ -472,7 +486,13 @@ html {
   color: #eb5e28;
 }
 
-.lostAndFound .row-lost .lost-right a {
+@media screen and (max-width: 1200px) {
+  .lostAndFound .row .lost-right .lost-button {
+    text-align: center;
+  }
+}
+
+.lostAndFound .row .lost-right .lost-button a {
   text-decoration: none;
   border: 2px solid #eb5e28;
   background-color: #eb5e28;
@@ -486,7 +506,7 @@ html {
   font-size: 20px;
 }
 
-.lostAndFound .row-lost .lost-right a:hover {
+.lostAndFound .row .lost-right .lost-button a:hover {
   -webkit-box-shadow: 0 0 0 1px #333533 inset;
           box-shadow: 0 0 0 1px #333533 inset;
   -webkit-transition: all 300ms ease;
@@ -789,30 +809,35 @@ html {
   padding-left: 12px;
 }
 
-.home-shop .row-shop .row-shop-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.home-shop .shop-top .row {
   margin-bottom: 20px;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item {
-  width: 23%;
+@media screen and (max-width: 1200px) {
+  .home-shop .shop-top .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card {
+@media screen and (max-width: 1200px) {
+  .home-shop .shop-top .row .shop-item {
+    margin-bottom: 20px;
+  }
+}
+
+.home-shop .shop-top .row .shop-item .card {
   border-radius: 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-img {
+.home-shop .shop-top .row .shop-item .card .card-img {
   overflow: hidden;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-img img {
+.home-shop .shop-top .row .shop-item .card .card-img img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -820,77 +845,91 @@ html {
   transition: 0.4s;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-img img:hover {
+.home-shop .shop-top .row .shop-item .card .card-img img:hover {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body h5 {
+.home-shop .shop-top .row .shop-item .card .card-body h5 {
   text-align: center;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor {
+.home-shop .shop-top .row .shop-item .card .card-body .shop-infor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor .shop-price {
+.home-shop .shop-top .row .shop-item .card .card-body .shop-infor .shop-price {
   width: 45%;
   color: #e63946;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor .shop-orders {
+@media screen and (max-width: 700px) {
+  .home-shop .shop-top .row .shop-item .card .card-body .shop-infor .shop-price {
+    width: 60%;
+  }
+}
+
+.home-shop .shop-top .row .shop-item .card .card-body .shop-infor .shop-orders {
   width: 60%;
   text-align: right;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body .shop-infor .shop-orders i {
+@media screen and (max-width: 630px) {
+  .home-shop .shop-top .row .shop-item .card .card-body .shop-infor .shop-orders {
+    width: 50%;
+  }
+}
+
+.home-shop .shop-top .row .shop-item .card .card-body .shop-infor .shop-orders i {
   font-size: 14px;
   color: #ffd166;
   height: 100%;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card .card-body p {
+.home-shop .shop-top .row .shop-item .card .card-body p {
   font-size: 16px;
   color: #636363;
   margin-bottom: 15px;
 }
 
-.home-shop .row-shop .row-shop-top .row-shop-item .card:hover {
+.home-shop .shop-top .row .card:hover {
   -webkit-box-shadow: 0 20px 20px -10px #00000033;
           box-shadow: 0 20px 20px -10px #00000033;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.home-shop .row-shop .row-shop-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+@media screen and (max-width: 1200px) {
+  .home-shop .shop-bottom .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item {
-  width: 23%;
+@media screen and (max-width: 1200px) {
+  .home-shop .shop-bottom .row .shop-item {
+    margin-bottom: 20px;
+  }
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card {
+.home-shop .shop-bottom .row .shop-item .card {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border-radius: 10px;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-img {
+.home-shop .shop-bottom .row .shop-item .card .card-img {
   overflow: hidden;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-img img {
+.home-shop .shop-bottom .row .shop-item .card .card-img img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -898,24 +937,24 @@ html {
   transition: 0.4s;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-img img:hover {
+.home-shop .shop-bottom .row .shop-item .card .card-img img:hover {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-body p {
+.home-shop .shop-bottom .row .shop-item .card .card-body p {
   font-size: 16px;
   color: #636363;
   margin-bottom: 20px;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-body .shop-infor {
+.home-shop .shop-bottom .row .shop-item .card .card-body .shop-infor {
   padding-bottom: 20px;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-body .shop-infor a {
+.home-shop .shop-bottom .row .shop-item .card .card-body .shop-infor a {
   border: 1px solid #f48c06;
   padding: 10px 20px;
   text-decoration: none;
@@ -928,13 +967,13 @@ html {
   transition: 0.4s;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card .card-body .shop-infor a:hover {
+.home-shop .shop-bottom .row .shop-item .card .card-body .shop-infor a:hover {
   opacity: 0.75;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.home-shop .row-shop .row-shop-bottom .row-shop-item .card:hover {
+.home-shop .shop-bottom .row .shop-item .card:hover {
   -webkit-box-shadow: 0 20px 20px -10px #00000033;
           box-shadow: 0 20px 20px -10px #00000033;
   -webkit-transition: all 0.2s ease-in-out;
