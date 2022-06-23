@@ -13,15 +13,15 @@
       align-items: center;
 
       .header-logo {
-        width: 15%;
+        width: 10%;
         cursor: pointer;
         @media screen and (max-width: 992px) {
-          width: 15%;
+          width: 20%;
         }
         img {
           width: 100%;
           @media screen and (max-width: 992px) {
-            width: 70%;
+            width: 65%;
           }
         }
       }
@@ -31,6 +31,9 @@
         margin-left: 20px;
         @media screen and (max-width: 1035px) {
           width: 90%;
+        }
+        @media screen and (max-width: 992px) {
+          display: none;
         }
         .nav-content {
           padding: 0;
@@ -97,17 +100,31 @@
     .header-right {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
+      @media screen and (max-width: 992px) {
+        width: 40%;
+      }
       .header-right-item {
-        width: 80%;
-        text-align: right;
+        width: 85%;
+        justify-content: flex-end;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          text-align: right;
+        }
+
         i {
           margin-right: 20px;
           color: $color-white-light;
           cursor: pointer;
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
         }
         .nav-login {
           display: inline-block;
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
           a {
             color: $color-white-light;
             font-size: $text-md;
@@ -139,6 +156,38 @@
           color: $color-white-light;
           background: transparent;
           border: 1px solid $color-white-light;
+        }
+        .navbar-toggler {
+          @media screen and (min-width: 992px) {
+            display: none;
+          }
+
+          .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+        .offcanvas {
+          .offcanvas-header {
+            h5 {
+              font-weight: 600;
+              font-size: 30px;
+            }
+          }
+          .offcanvas-body {
+            .nav-item {
+              display: inline;
+              a {
+                font-size: 24px;
+                color: #636363;
+                @media screen and (max-width: 992px) {
+                  text-align: left;
+                }
+              }
+            }
+          }
         }
       }
     }

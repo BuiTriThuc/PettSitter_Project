@@ -28,7 +28,7 @@
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="header-left col-xl-7 col-lg-7">
+          <div class="header-left col-xl-8 col-lg-7 col-md-7">
             <div class="header-logo col-lg-1">
               <a href="#">
                 <img src="./img/Logo-header.png" alt="" />
@@ -70,16 +70,113 @@
               </nav>
             </div>
           </div>
-          <div class="header-right col-xl-5 col-lg-5">
+          <div class="header-right col-xl-4 col-lg-5 col-md-3">
             <div class="header-right-item">
               <i class="fa-solid fa-magnifying-glass"></i>
               <li class="nav-login"><a href="#">Login</a></li>
-              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
 
-              <i
-                class="fa-solid fa-cart-shopping"
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Pet Sitter
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <form class="d-flex">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Lost&Found</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Shop
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Pet Item</a></li>
+                        <li><a class="dropdown-item" href="#">Pet Shop</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Services
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Spa & Grooming</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Pet Hotel</a></li>
+                        <li><a class="dropdown-item" href="#">Pet Guide</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
+              <!-- <i
+                class="fa-solid fa-cart-shopping cart-header"
                 style="font-size: 24px; margin-left: 22px"
-              ></i>
+              ></i> -->
             </div>
           </div>
         </div>
@@ -433,8 +530,8 @@
     </section>
     <section class="petHotel">
       <div class="container">
-        <div class="row-pethotel">
-          <div class="pethotel-left">
+        <div class="row">
+          <div class="pethotel-left col-xl-5 col-lg-12 col-md-12">
             <div class="pethotel-title">
               <h1>Pet Hotel</h1>
               <p>Take care of your pet while you are away</p>
@@ -478,7 +575,7 @@
               <a href="#"> Booking Now </a>
             </div>
           </div>
-          <div class="pethotel-right">
+          <div class="pethotel-right col-xl-6 col-lg-12 col-md-12">
             <a href="">
               <img src="./img/pet-hotel-doc.jpg" alt="" />
             </a>
@@ -491,8 +588,8 @@
         <div class="contact-title">
           <h1>Contact</h1>
         </div>
-        <div class="row-contact">
-          <div class="contact-left">
+        <div class="row">
+          <div class="contact-left col-xl-8 col-md-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6099414916575!2d106.8076943149421!3d10.841132860960094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752731176b07b1%3A0xb752b24b379bae5e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgVFAuIEhDTQ!5e0!3m2!1svi!2s!4v1655576097587!5m2!1svi!2s"
               width="600"
@@ -503,17 +600,18 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div class="contact-right">
+          <div class="contact-right col-xl-4 col-md-12">
             <label for="exampleFormControlInput1" class="form-label"
               >You are...</label
             >
             <br />
-            <button>Loser Pet</button>
-            <button>Finder Pet</button>
+            <div class="choose-role">
+              <button>Loser Pet</button>
+              <button>Finder Pet</button>
 
-            <button>Customer</button>
-            <br />
-            <button>Other</button>
+              <button>Customer</button>
+              <button>Other</button>
+            </div>
             <div class="mb-3 form-text">
               <input
                 type="email"
