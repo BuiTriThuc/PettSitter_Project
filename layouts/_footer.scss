@@ -3,62 +3,54 @@ footer {
   padding: 60px 0px 60px 0px;
   background: rgba(#283845, 0.8);
   color: white;
-  .row-footer {
-    display: flex;
-    .footer-left {
-      width: 30%;
-      .footer-img {
-        width: 25%;
-        margin-bottom: 20px;
-        margin-left: 50px;
-        img {
-          width: 100%;
-        }
-      }
-      .footer-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-
-        i {
-          font-size: 24px;
-          border: 1px solid $color-orange-800;
-          padding: 10px;
-          margin-right: 10px;
-          border-radius: 50%;
-          background: $color-orange-800;
-        }
-        p {
-          width: 90%;
-          margin-bottom: 0px;
-        }
+  .row {
+    .footer-img {
+      width: 25%;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      img {
+        width: 100%;
       }
     }
-    .footer-right {
-      width: 70%;
+    .footer-text {
       display: flex;
+      align-items: center;
       justify-content: center;
-      margin-top: 30px;
-      .footer-item {
-        width: 33.33%;
-        line-height: 35px;
-        font-size: 18px;
-        h3 {
-          margin-bottom: 20px;
-          font-weight: 600;
-        }
-        i {
-          margin-right: 5px;
-        }
-        a {
-          text-decoration: none;
-          color: white;
-        }
-        a:hover {
-          opacity: 0.65;
-          color: $color-orange-600;
-        }
+      margin-bottom: 20px;
+
+      i {
+        font-size: 24px;
+        border: 1px solid $color-orange-800;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background: $color-orange-800;
+      }
+      p {
+        width: 90%;
+        margin-bottom: 0px;
+      }
+    }
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .footer-item {
+      line-height: 35px;
+      font-size: 18px;
+      h3 {
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      i {
+        margin-right: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        opacity: 0.65;
+        color: $color-orange-600;
       }
     }
   }

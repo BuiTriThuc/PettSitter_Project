@@ -408,27 +408,27 @@ footer {
   color: white;
 }
 
-footer .row-footer {
+footer .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
 }
 
-footer .row-footer .footer-left {
-  width: 30%;
-}
-
-footer .row-footer .footer-left .footer-img {
+footer .row .footer-img {
   width: 25%;
   margin-bottom: 20px;
   margin-left: 50px;
 }
 
-footer .row-footer .footer-left .footer-img img {
+footer .row .footer-img img {
   width: 100%;
 }
 
-footer .row-footer .footer-left .footer-text {
+footer .row .footer-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +441,7 @@ footer .row-footer .footer-left .footer-text {
   margin-bottom: 20px;
 }
 
-footer .row-footer .footer-left .footer-text i {
+footer .row .footer-text i {
   font-size: 24px;
   border: 1px solid #eb5e28;
   padding: 10px;
@@ -450,43 +450,31 @@ footer .row-footer .footer-left .footer-text i {
   background: #eb5e28;
 }
 
-footer .row-footer .footer-left .footer-text p {
+footer .row .footer-text p {
   width: 90%;
   margin-bottom: 0px;
 }
 
-footer .row-footer .footer-right {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-}
-
-footer .row-footer .footer-right .footer-item {
-  width: 33.33%;
+footer .row .footer-item {
   line-height: 35px;
   font-size: 18px;
 }
 
-footer .row-footer .footer-right .footer-item h3 {
+footer .row .footer-item h3 {
   margin-bottom: 20px;
   font-weight: 600;
 }
 
-footer .row-footer .footer-right .footer-item i {
+footer .row .footer-item i {
   margin-right: 5px;
 }
 
-footer .row-footer .footer-right .footer-item a {
+footer .row .footer-item a {
   text-decoration: none;
   color: white;
 }
 
-footer .row-footer .footer-right .footer-item a:hover {
+footer .row .footer-item a:hover {
   opacity: 0.65;
   color: #f48c06;
 }
