@@ -9,10 +9,6 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-}
-
 html {
   padding: 0;
 }

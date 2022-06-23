@@ -9,10 +9,6 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -24,10 +20,6 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-}
-
 .header {
   background-color: rgba(52, 160, 164, 0.8);
   position: -webkit-sticky;
@@ -35,6 +27,12 @@ html {
   top: 0;
   z-index: 99;
   width: 100%;
+}
+
+@media screen and (width: 992px) {
+  .header .container {
+    width: 720px;
+  }
 }
 
 .header .row .header-left {
@@ -91,7 +89,7 @@ html {
 
 @media screen and (max-width: 992px) {
   .header .row .header-left .header-logo img {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -126,13 +124,7 @@ html {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1035px) {
-  .header .row .header-left .header-nav {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 993px) {
   .header .row .header-left .header-nav {
     display: none;
   }
@@ -221,12 +213,6 @@ html {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 1200px) {
-  .header .row .header-right {
-    text-align: right;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .header .row .header-right {
     width: 70%;
@@ -235,7 +221,7 @@ html {
 
 @media screen and (width: 992px) {
   .header .row .header-right {
-    width: 36%;
+    width: 33%;
   }
 }
 
@@ -268,7 +254,6 @@ html {
 @media screen and (width: 992px) {
   .header .row .header-right .header-right-item {
     width: 100%;
-    text-align: right;
   }
 }
 
@@ -396,10 +381,6 @@ html {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.container {
-  max-width: 1200px;
 }
 
 footer {

@@ -6,6 +6,11 @@
   top: 0;
   z-index: 99;
   width: 100%;
+  .container {
+    @media screen and (width: 992px) {
+      width: 720px;
+    }
+  }
   .row {
     .header-left {
       display: flex;
@@ -33,7 +38,7 @@
         img {
           width: 80%;
           @media screen and (max-width: 992px) {
-            width: 65%;
+            width: 60%;
           }
           @media screen and (width: 992px) {
             width: 50%;
@@ -53,10 +58,7 @@
         width: 80%;
         transform: translateY(8px);
         margin-left: 20px;
-        @media screen and (max-width: 1035px) {
-          width: 90%;
-        }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 993px) {
           display: none;
         }
         .nav-content {
@@ -125,14 +127,12 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      @media screen and (max-width: 1200px) {
-        text-align: right;
-      }
+
       @media screen and (max-width: 992px) {
         width: 70%;
       }
       @media screen and (width: 992px) {
-        width: 36%;
+        width: 33%;
       }
       @media screen and (max-width: 768px) {
         width: 70%;
@@ -149,7 +149,6 @@
         }
         @media screen and (width: 992px) {
           width: 100%;
-          text-align: right;
         }
         @media screen and (max-width: 576px) {
           text-align: right;
