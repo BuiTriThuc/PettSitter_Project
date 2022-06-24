@@ -29,12 +29,6 @@ html {
   width: 100%;
 }
 
-@media screen and (width: 992px) {
-  .header .container {
-    width: 720px;
-  }
-}
-
 .header .row .header-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +227,7 @@ html {
 
 @media screen and (max-width: 577px) {
   .header .row .header-right {
-    width: 70%;
+    width: 72%;
   }
 }
 
@@ -314,6 +308,13 @@ html {
   text-decoration: none;
 }
 
+@media screen and (max-width: 400px) {
+  .header .row .header-right .header-right-item .btn-report {
+    padding: 5px 10px;
+    text-align: left;
+  }
+}
+
 .header .row .header-right .header-right-item .btn-report:hover {
   -webkit-box-shadow: 0 0 0 1px #f7fff7 inset;
           box-shadow: 0 0 0 1px #f7fff7 inset;
@@ -362,6 +363,11 @@ html {
   .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item a {
     text-align: left;
   }
+  .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item a i {
+    color: #fff;
+    display: inline;
+    margin-right: 8px;
+  }
 }
 
 .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item .dropdown-menu a {
@@ -370,6 +376,14 @@ html {
 
 .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item .dropdown-menu {
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item .dropdown-menu i {
+    color: #1f1f25;
+    display: inline;
+    margin-right: 8px;
+  }
 }
 
 .enter-infor {

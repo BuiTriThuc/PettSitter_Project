@@ -29,12 +29,6 @@ html {
   width: 100%;
 }
 
-@media screen and (width: 992px) {
-  .header .container {
-    width: 720px;
-  }
-}
-
 .header .row .header-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +227,7 @@ html {
 
 @media screen and (max-width: 577px) {
   .header .row .header-right {
-    width: 70%;
+    width: 72%;
   }
 }
 
@@ -314,6 +308,13 @@ html {
   text-decoration: none;
 }
 
+@media screen and (max-width: 400px) {
+  .header .row .header-right .header-right-item .btn-report {
+    padding: 5px 10px;
+    text-align: left;
+  }
+}
+
 .header .row .header-right .header-right-item .btn-report:hover {
   -webkit-box-shadow: 0 0 0 1px #f7fff7 inset;
           box-shadow: 0 0 0 1px #f7fff7 inset;
@@ -362,6 +363,11 @@ html {
   .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item a {
     text-align: left;
   }
+  .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item a i {
+    color: #fff;
+    display: inline;
+    margin-right: 8px;
+  }
 }
 
 .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item .dropdown-menu a {
@@ -370,6 +376,14 @@ html {
 
 .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item .dropdown-menu {
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item .dropdown-menu i {
+    color: #1f1f25;
+    display: inline;
+    margin-right: 8px;
+  }
 }
 
 body {
@@ -400,9 +414,15 @@ footer .row {
 }
 
 footer .row .footer-img {
-  width: 25%;
+  width: 30%;
   margin-bottom: 20px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  footer .row .footer-img {
+    margin-left: 0%;
+  }
 }
 
 footer .row .footer-img img {
@@ -420,6 +440,7 @@ footer .row .footer-text {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
+  color: #eaf4f4;
 }
 
 footer .row .footer-text i {
@@ -429,6 +450,7 @@ footer .row .footer-text i {
   margin-right: 10px;
   border-radius: 50%;
   background: #eb5e28;
+  color: #f6fff8;
 }
 
 footer .row .footer-text p {
@@ -443,7 +465,14 @@ footer .row .footer-item {
 
 footer .row .footer-item h3 {
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #f6fff8;
+}
+
+@media screen and (max-width: 992px) {
+  footer .row .footer-item h3 {
+    font-size: 22px;
+  }
 }
 
 footer .row .footer-item i {
@@ -452,7 +481,13 @@ footer .row .footer-item i {
 
 footer .row .footer-item a {
   text-decoration: none;
-  color: white;
+  color: #eaf4f4;
+}
+
+@media screen and (max-width: 992px) {
+  footer .row .footer-item a {
+    font-size: 16px;
+  }
 }
 
 footer .row .footer-item a:hover {
@@ -464,43 +499,50 @@ footer .row .footer-item a:hover {
   background-color: rgba(32, 44, 57, 0.8);
 }
 
-.footer-coppyright .row-coppyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer-coppyright .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.footer-coppyright .row-coppyright .coppyright-left {
+.footer-coppyright .row .coppyright-left {
   padding-top: 20px;
-  width: 50%;
   color: white;
 }
 
-.footer-coppyright .row-coppyright .coppyright-left a {
+@media screen and (max-width: 992px) {
+  .footer-coppyright .row .coppyright-left {
+    text-align: center;
+  }
+}
+
+.footer-coppyright .row .coppyright-left a {
   text-decoration: none;
   color: #eb5e28;
 }
 
-.footer-coppyright .row-coppyright .coppyright-left a:hover {
+.footer-coppyright .row .coppyright-left a:hover {
   opacity: 0.75;
 }
 
-.footer-coppyright .row-coppyright .coppyright-right {
-  width: 50%;
+.footer-coppyright .row .coppyright-right {
   text-align: center;
   padding-left: 200px;
 }
 
-.footer-coppyright .row-coppyright .coppyright-right a {
+@media screen and (max-width: 992px) {
+  .footer-coppyright .row .coppyright-right {
+    display: none;
+  }
+}
+
+.footer-coppyright .row .coppyright-right a {
   text-decoration: none;
   color: white;
   margin-right: 10px;
 }
 
-.footer-coppyright .row-coppyright .coppyright-right a i {
+.footer-coppyright .row .coppyright-right a i {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px;
   border-radius: 50%;
@@ -509,7 +551,7 @@ footer .row .footer-item a:hover {
   transition: 0.4s;
 }
 
-.footer-coppyright .row-coppyright .coppyright-right a i:hover {
+.footer-coppyright .row .coppyright-right a i:hover {
   background: #eb5e28;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -531,6 +573,13 @@ html {
   transition: all 0.4s;
 }
 
+@media screen and (max-width: 576px) {
+  .carousel .carousel-control-prev i {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}
+
 .carousel .carousel-control-prev:hover i {
   background: #eb5e28;
   border: 1px solid #eb5e28;
@@ -538,6 +587,13 @@ html {
           transform: translateX(-18px);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .carousel-control-prev:hover i {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
 }
 
 .carousel .carousel-control-next i {
@@ -550,6 +606,13 @@ html {
   transition: all 0.4s;
 }
 
+@media screen and (max-width: 576px) {
+  .carousel .carousel-control-next i {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}
+
 .carousel .carousel-control-next:hover i {
   background: #eb5e28;
   border: 1px solid #eb5e28;
@@ -557,6 +620,13 @@ html {
           transform: translateX(18px);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .carousel-control-next:hover i {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 .lostAndFound {
@@ -1038,7 +1108,7 @@ html {
 
 @media screen and (max-width: 1200px) {
   .petHotel .row .pethotel-left .pethotel-content .pethotel-item {
-    width: 80%;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1139,6 +1209,12 @@ html {
   .petHotel .pethotel-right {
     width: 80%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .petHotel .pethotel-right {
+    width: 100%;
   }
 }
 
@@ -1367,7 +1443,7 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .contact .row .contact-left {
     width: 100%;
   }
@@ -1393,7 +1469,7 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .contact .row .contact-right {
     width: 100%;
   }

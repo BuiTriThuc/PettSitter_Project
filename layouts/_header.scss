@@ -6,11 +6,6 @@
   top: 0;
   z-index: 99;
   width: 100%;
-  .container {
-    @media screen and (width: 992px) {
-      width: 720px;
-    }
-  }
   .row {
     .header-left {
       display: flex;
@@ -138,7 +133,7 @@
         width: 70%;
       }
       @media screen and (max-width: 577px) {
-        width: 70%;
+        width: 72%;
       }
       .header-right-item {
         width: 85%;
@@ -191,6 +186,10 @@
           box-shadow: 0 0 0 3em $color-orange-600 inset;
           transition: all 300ms ease;
           text-decoration: none;
+          @media screen and (max-width: 400px) {
+            padding: 5px 10px;
+            text-align: left;
+          }
         }
         .btn-report:hover {
           box-shadow: 0 0 0 1px $color-white-light inset;
@@ -234,6 +233,11 @@
                 color: #fff;
                 @media screen and (max-width: 992px) {
                   text-align: left;
+                  i {
+                    color: #fff;
+                    display: inline;
+                    margin-right: 8px;
+                  }
                 }
               }
               .dropdown-menu {
@@ -243,6 +247,13 @@
               }
               .dropdown-menu {
                 width: 100%;
+                @media screen and (max-width: 992px) {
+                  i {
+                    color: #1f1f25;
+                    display: inline;
+                    margin-right: 8px;
+                  }
+                }
               }
             }
           }

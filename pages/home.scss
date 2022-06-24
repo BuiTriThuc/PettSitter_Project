@@ -15,6 +15,10 @@ html {
       padding: 20px 20px;
       border-radius: 50%;
       transition: all 0.4s;
+      @media screen and (max-width: 576px) {
+        padding: 10px 10px;
+        font-size: 14px;
+      }
     }
   }
   .carousel-control-prev:hover i {
@@ -22,6 +26,9 @@ html {
     border: 1px solid $color-orange-800;
     transform: translateX(-18px);
     transition: all 0.4s;
+    @media screen and (max-width: 768px) {
+      transform: translateX(-10px);
+    }
   }
   .carousel-control-next {
     i {
@@ -31,6 +38,10 @@ html {
       padding: 20px 20px;
       border-radius: 50%;
       transition: all 0.4s;
+      @media screen and (max-width: 576px) {
+        padding: 10px 10px;
+        font-size: 14px;
+      }
     }
   }
   .carousel-control-next:hover i {
@@ -38,6 +49,9 @@ html {
     border: 1px solid $color-orange-800;
     transform: translateX(18px);
     transition: all 0.4s;
+    @media screen and (max-width: 768px) {
+      transform: translateX(10px);
+    }
   }
 }
 
@@ -379,7 +393,7 @@ html {
           overflow: hidden;
           margin-bottom: 30px;
           @media screen and (max-width: 1200px) {
-            width: 80%;
+            width: 100%;
             justify-content: center;
           }
           .pethotel-icon {
@@ -461,6 +475,9 @@ html {
     @media screen and (max-width: 1200px) {
       width: 80%;
       margin: auto;
+    }
+    @media screen and (max-width: 992px) {
+      width: 100%;
     }
     a {
       img {
@@ -632,7 +649,7 @@ html {
         width: 85%;
         justify-content: center;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         width: 100%;
       }
       iframe {
@@ -648,7 +665,7 @@ html {
         width: 85%;
         justify-content: center;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         width: 100%;
       }
       label {
