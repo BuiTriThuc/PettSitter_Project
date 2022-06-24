@@ -482,6 +482,7 @@ footer .row .footer-item i {
 footer .row .footer-item a {
   text-decoration: none;
   color: #eaf4f4;
+  opacity: 0.85;
 }
 
 @media screen and (max-width: 992px) {
@@ -491,8 +492,8 @@ footer .row .footer-item a {
 }
 
 footer .row .footer-item a:hover {
-  opacity: 0.65;
-  color: #f48c06;
+  text-decoration: underline;
+  opacity: 1;
 }
 
 .footer-coppyright {
