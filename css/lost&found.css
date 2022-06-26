@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 html {
@@ -615,7 +615,7 @@ html {
 }
 
 .comebackhome .reunited-title h1 {
-  font-weight: 600;
+  font-weight: 700;
   color: #262626;
   font-size: 46px;
 }
@@ -669,6 +669,10 @@ html {
 .comebackhome .row .reunited-item .card .card-title .card-title-left h5 {
   color: #25a244;
   font-size: 24px;
+}
+
+.comebackhome .row .reunited-item .card .card-title .card-title-left p {
+  font-size: 14px;
 }
 
 .comebackhome .row .reunited-item .card .card-title .card-title-right {
