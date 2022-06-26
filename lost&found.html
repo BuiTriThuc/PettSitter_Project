@@ -27,13 +27,14 @@
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="header-left">
-            <div class="header-logo">
+          <div class="header-left col-xl-8 col-lg-8 col-3">
+            <div class="header-logo col-lg-1 col-sm-3">
               <a href="#">
                 <img src="./img/Logo-header.png" alt="" />
               </a>
             </div>
-            <div class="header-nav">
+
+            <div class="header-nav col-lg-11">
               <nav class="navbar d-none d-md-block">
                 <ul class="nav-content">
                   <li class="nav-item">
@@ -68,16 +69,146 @@
               </nav>
             </div>
           </div>
-          <div class="header-right">
-            <div class="header-right-item">
+          <div class="header-right col-xl-4 col-lg-4 col-9">
+            <div class="header-right-item col-sm-3">
               <i class="fa-solid fa-magnifying-glass"></i>
               <li class="nav-login"><a href="#">Login</a></li>
-              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
 
-              <i
-                class="fa-solid fa-cart-shopping"
-                style="font-size: 24px; margin-left: 22px"
-              ></i>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Pet Sitter
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <form class="d-flex">
+                      <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                    </form>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="#"
+                        style="margin-top: 20px"
+                      >
+                        <i class="fa-solid fa-house"></i>
+                        Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                        Lost&Found
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-paw"></i>
+                        Shop
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-dog"></i>
+                            Pet Item
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-bone"></i>
+                            Pet Shop
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        Services
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Spa & Grooming
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-hotel"></i>
+                            Pet Hotel
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            Pet Guide
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                        Contact
+                      </a>
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
             </div>
           </div>
         </div>
@@ -95,8 +226,8 @@
             <div class="enter-title">
               <h3>Start Your Free Alert</h3>
               <p>
-                Enter your pet's information to instantly
-                start spreading local awareness.
+                Enter your pet's information to instantly start spreading local
+                awareness.
               </p>
             </div>
             <div class="enter-main">
@@ -108,9 +239,12 @@
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
                   checked
-                  
                 />
-                <label class="form-check-label" for="flexRadioDefault2" style="margin-right:5px">
+                <label
+                  class="form-check-label"
+                  for="flexRadioDefault2"
+                  style="margin-right: 5px"
+                >
                   Lost
                 </label>
                 <input
@@ -130,7 +264,9 @@
                   <input type="text" class="form-control" />
                 </div>
                 <div class="form-top-right">
-                  <label class="form-label">Nearest Address Last Seen <span>*</span></label>
+                  <label class="form-label"
+                    >Nearest Address Last Seen <span>*</span></label
+                  >
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -140,7 +276,9 @@
                   <input type="text" class="form-control" />
                 </div>
                 <div class="form-top-right">
-                  <label class="form-label">Create Password <span>*</span></label>
+                  <label class="form-label"
+                    >Create Password <span>*</span></label
+                  >
                   <input type="text" class="form-control" />
                 </div>
               </div>
@@ -149,22 +287,453 @@
                 type="checkbox"
                 value=""
                 id="flexCheckDefault"
-                style="margin-bottom: 30px;"
+                style="margin-bottom: 30px"
               />
               <label class="form-check-label" for="flexCheckDefault">
                 Sign me up for local lost & found pet alerts
               </label>
               <div class="btn-enter">
-                <button class="btn btn-success"  type="submit">Find Your Pet Back Home</button>
-
+                <button class="btn btn-success" type="submit">
+                  Find Your Pet Back Home
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="comebackhome"></section>
-    <section class="lost"></section>
+    <section class="lost">
+      <div class="container">
+        <div class="lost-title">
+          <h1>Lost</h1>
+        </div>
+        <div class="row">
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-1.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Tri Thuc</h5>
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>123</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">12 May 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">Ho Chi Minh City</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-2.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Minh Son</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>124</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">25 Oct 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">Ho Chi Minh City</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-3.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Hoai Nam</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>125</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">23 JUN 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">Da Nang City</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-4.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Tri Thuc</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>126</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">37 Sep 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">Ho Chi Minh City</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-5.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Minh Son</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>127</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">3 Nov 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">Hai Phong City</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-6.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Hoai Nam</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>128</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">1 JUN 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">Binh Duong City</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-7.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Hoai Nam</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>123</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">25 JUN 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">OAKEY, QLD</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lost-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/lost-8.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_lost.png" alt="" />
+              </div>
+              <h5 class="card-title pt-2 px-2">Hoai Nam</h5>
+
+              <div class="card-content">
+                <div class="pet-id">
+                  <div class="id-left">
+                    <span>PET ID: </span>
+                  </div>
+                  <div class="id-right">
+                    <span>123</span>
+                  </div>
+                </div>
+                <div class="pet-missing">
+                  <div class="missing-left">
+                    <span>MISSING SINCE:</span>
+                  </div>
+                  <div class="missing-right">25 JUN 2022</div>
+                </div>
+                <div class="pet-place">
+                  <div class="place-left">FROM:</div>
+                  <div class="place-right">OAKEY, QLD</div>
+                </div>
+                <p>a few seconds</p>
+                <div class="btn-card">
+                  <a class="btn-lost-info" href="#">MORE INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comebackhome">
+      <div class="container">
+        <div class="reunited-title">
+          <h1>Comeback Home</h1>
+          <p>Read about recently reunited fur babies.</p>
+          <h3>1,000</h3>
+          <h6>Pets Reunited And Counting!</h6>
+        </div>
+        <div class="row">
+          <div class="reunited-item col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/success-1.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_reunited.png" alt="" />
+              </div>
+
+              <div class="card-title">
+                <div class="card-title-left">
+                  <h5>Zoe</h5>
+                  <p>District 1, Ho Chi Minh City</p>
+                </div>
+                <div class="card-title-right">13 hours ago</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  "I had just returned home from work and was walking Zoe around
+                  the neighborhood. We live in a large complex that is gated
+                  just north of a busy exit to an interstate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reunited-item col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/success-2.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_reunited.png" alt="" />
+              </div>
+              <div class="card-title">
+                <div class="card-title-left">
+                  <h5>Tidus</h5>
+                  <p>District 2, Ho Chi Minh City</p>
+                </div>
+                <div class="card-title-right">5 hours ago</div>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  "Monkey snuck out of our RV at around 10:00 PM one day in
+                  Little Talbot Island State Park, which is a beautiful,
+                  paradise-like campground full of trees and dense shrubbery.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reunited-item col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/success-3.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_reunited.png" alt="" />
+              </div>
+              <div class="card-title">
+                <div class="card-title-left">
+                  <h5>Sydney</h5>
+                  <p>District 3, Ho Chi Minh City</p>
+                </div>
+                <div class="card-title-right">6 hours ago</div>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  "I put Suki outside while I do my morning routine every
+                  morning. When I was done and went outside to check on her one
+                  day after this, the leash was ripped and she was gone.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reunited-item col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/success-4.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_reunited.png" alt="" />
+              </div>
+              <div class="card-title">
+                <div class="card-title-left">
+                  <h5>Suki</h5>
+                  <p>District 4, Ho Chi Minh City</p>
+                </div>
+                <div class="card-title-right">2 weeks ago</div>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  "My family was visiting for Memorial Day weekend and my
+                  younger brothers accidentally let Charlotte out. I had already
+                  gone to bed early for work the next morning and could not find
+                  her
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reunited-item col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/success-5.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_reunited.png" alt="" />
+              </div>
+              <div class="card-title">
+                <div class="card-title-left">
+                  <h5>Flynn</h5>
+                  <p>District 5, Ho Chi Minh City</p>
+                </div>
+                <div class="card-title-right">3 weeks ago</div>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  "My fiancé and I were driving home and saw this pup crossing a
+                  busy street with a blind turn. We immediately pulled over and
+                  my fiancé got out to go retriever her before she could get
+                  hurt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reunited-item col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/success-6.jpg" class="card-img-top" alt="..." />
+                <img class="badge-lost" src="./img/badge_reunited.png" alt="" />
+              </div>
+              <div class="card-title">
+                <div class="card-title-left">
+                  <h5>Sapphire</h5>
+                  <p>District 6, Ho Chi Minh City</p>
+                </div>
+                <div class="card-title-right">1 weeks ago</div>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  "I’m unsure how she got out, really. Sapphire was in my
+                  backyard like she usually is, but when I went out to check on
+                  her, she must have just gotten out. We were so worried!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="found"></section>
     <footer></footer>
 

@@ -6,27 +6,27 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 10%;
+  padding-top: 50px;
   height: 750px;
-  span{
+  span {
     color: red;
   }
   .row-enter {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
-    
+
     .enter-left {
       width: 50%;
       text-align: center;
       padding-top: 100px;
-      h1{
+      h1 {
         font-size: 40px;
         font-weight: 600;
-    }
-    p{
+      }
+      p {
         font-size: 36px;
         margin-bottom: 0px;
-    }
+      }
     }
     .enter-right {
       width: 45%;
@@ -41,8 +41,8 @@
           margin-bottom: 15px;
           color: green;
         }
-        p{
-            font-size: 17px;
+        p {
+          font-size: 17px;
           color: #636363;
           margin-bottom: 15px;
         }
@@ -64,11 +64,192 @@
         }
         .btn-enter {
           text-align: center;
-          button{
+          button {
             padding: 10px 20px;
             border-radius: 10px;
           }
-          
+        }
+      }
+    }
+  }
+}
+
+.lost {
+  padding: 50px 0px;
+  .lost-title {
+    h1 {
+      font-weight: 600;
+      color: #262626;
+      padding-bottom: 20px;
+    }
+  }
+  .row {
+    .lost-item {
+      .card {
+        .card-img {
+          position: relative;
+          img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+          .badge-lost {
+            position: absolute;
+            top: -5px;
+            right: -4px;
+          }
+        }
+        .card-content {
+          border: none;
+          padding: 0px 4px 4px 4px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          .pet-id {
+            display: flex;
+            justify-content: space-between;
+            background: #34303d;
+            border-radius: 3px;
+            margin-top: 6px;
+            color: white;
+            padding: 4px 8px;
+            font-size: 13px;
+            overflow: hidden;
+            .id-left {
+              width: 30%;
+            }
+            .id-right {
+              width: 30%;
+              text-align: right;
+            }
+          }
+          .pet-missing {
+            display: flex;
+            justify-content: space-between;
+            background: #34303d;
+            border-radius: 3px;
+            margin-top: 6px;
+            color: white;
+            padding: 4px 8px;
+            font-size: 13px;
+            overflow: hidden;
+            .missing-left {
+              width: 50%;
+            }
+            .missing-right {
+              width: 50%;
+              text-align: right;
+            }
+          }
+          .pet-place {
+            display: flex;
+            justify-content: space-between;
+            background: #2b2d42;
+            border-radius: 3px;
+            margin-top: 6px;
+            color: white;
+            padding: 4px 8px;
+            font-size: 13px;
+            overflow: hidden;
+            .place-left {
+              width: 50%;
+            }
+            .place-right {
+              width: 50%;
+              text-align: right;
+            }
+          }
+          p {
+            text-align: right;
+            margin: 5px 5px 5px 0px;
+            color: #636363;
+          }
+          .btn-card {
+            width: 100%;
+            background: #ef233c;
+            text-align: center;
+            padding: 5px 0px;
+            border-radius: 5px;
+            .btn-lost-info {
+              text-decoration: none;
+              color: #2b2d42;
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.comebackhome {
+  padding: 50px 0px;
+  background-color: #92e6a7;
+  .reunited-title {
+    text-align: center;
+    padding-bottom: 30px;
+    h1 {
+      font-weight: 600;
+      color: #262626;
+      font-size: 46px;
+    }
+    p {
+      color: #636363;
+      font-size: 18px;
+    }
+    h3 {
+      font-weight: 600;
+      color: #262626;
+      font-size: 30px;
+    }
+    h6 {
+      font-weight: 600;
+      color: #262626;
+      font-size: 22px;
+    }
+  }
+  .row {
+    .reunited-item {
+      .card {
+        .card-img {
+          position: relative;
+          img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+          .badge-lost {
+            position: absolute;
+            top: -5px;
+            right: -4px;
+          }
+        }
+        .card-title {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 10px 0px 10px;
+          .card-title-left {
+            width: 50%;
+            h5 {
+              color: #25a244;
+              font-size: 24px;
+            }
+          }
+          .card-title-right {
+            width: 50%;
+            text-align: right;
+            color: #636363;
+          }
+        }
+        .card-content {
+          border: none;
+          padding: 0px 4px 4px 4px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+
+          p {
+            margin: 5px 5px 5px 0px;
+            color: #636363;
+            font-size: 18px;
+          }
         }
       }
     }
