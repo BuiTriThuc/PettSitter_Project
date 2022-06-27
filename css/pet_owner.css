@@ -215,19 +215,21 @@ a{
 }
 
 .demi-search {
-  padding: 1% 17% 0% 17%;
+  padding: 0% 19% 0% 19%;
   display: flex;
   justify-content: center;
   vertical-align: middle;
 }
 
-.demi-search p{
+.demi-search center strong{
   color: #eb5e28;
   font-size: 20px;
+  justify-self: center;
+
 }
 
 .demi-search .small-search {
-  margin: 1% 20%;
+  margin: 2% 15%;
   height: 200%;
   width: 100%;
 }
@@ -250,37 +252,14 @@ a{
 .contents .content-left .clear-filter {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
 }
-.contents .content-left .clear-filter .fillter {
+.contents .content-left .clear-filter .filter{
   margin-top: 10px;
 }
-
-.contents .content-right .row .card .card-body h5 {
+.contents .content-right .row .card .card-body{
   text-align: center;
 }
 
-.contents .content-right .row .card .card-body .shop-infor {
-  display: flex;
-}
-
-.contents .content-right .row .card .card-body .shop-infor .shop-price {
-  width: 50%;
-  color: #e63946;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.contents .content-right .row .card .card-body .shop-infor .shop-orders {
-  width: 50%;
-  text-align: right;
-}
-
-.contents .content-right .row .card .card-body .shop-infor .shop-orders i {
-  font-size: 14px;
-  color: #ffd166;
-  height: 100%;
-}
 
 .contents .content-right .row .card .card-body p {
   font-size: 16px;
