@@ -52,11 +52,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .row .header-left .header-logo {
@@ -100,7 +100,7 @@ html {
 
 @media screen and (max-width: 992px) {
   .header .row .header-left .header-logo img {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -131,17 +131,11 @@ html {
 .header .row .header-left .header-nav {
   width: 80%;
   -webkit-transform: translateY(8px);
-  transform: translateY(8px);
+          transform: translateY(8px);
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1035px) {
-  .header .row .header-left .header-nav {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 993px) {
   .header .row .header-left .header-nav {
     display: none;
   }
@@ -186,7 +180,7 @@ html {
   visibility: hidden;
   background-color: #fff;
   -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   text-align: left;
   padding: 12px 0;
   border-radius: 4px;
@@ -223,17 +217,11 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-@media screen and (max-width: 1200px) {
-  .header .row .header-right {
-    text-align: right;
-  }
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 992px) {
@@ -244,7 +232,7 @@ html {
 
 @media screen and (width: 992px) {
   .header .row .header-right {
-    width: 36%;
+    width: 33%;
   }
 }
 
@@ -256,15 +244,15 @@ html {
 
 @media screen and (max-width: 577px) {
   .header .row .header-right {
-    width: 70%;
+    width: 72%;
   }
 }
 
 .header .row .header-right .header-right-item {
   width: 85%;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 992px) {
@@ -277,7 +265,6 @@ html {
 @media screen and (width: 992px) {
   .header .row .header-right .header-right-item {
     width: 100%;
-    text-align: right;
   }
 }
 
@@ -332,15 +319,22 @@ html {
   padding: 15px 20px;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 0 3em #f48c06 inset;
-  box-shadow: 0 0 0 3em #f48c06 inset;
+          box-shadow: 0 0 0 3em #f48c06 inset;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   text-decoration: none;
 }
 
+@media screen and (max-width: 400px) {
+  .header .row .header-right .header-right-item .btn-report {
+    padding: 5px 10px;
+    text-align: left;
+  }
+}
+
 .header .row .header-right .header-right-item .btn-report:hover {
   -webkit-box-shadow: 0 0 0 1px #f7fff7 inset;
-  box-shadow: 0 0 0 1px #f7fff7 inset;
+          box-shadow: 0 0 0 1px #f7fff7 inset;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   color: #f7fff7;
@@ -358,7 +352,6 @@ html {
     display: none;
   }
 }
-
 
 .header .row .header-right .header-right-item .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -386,6 +379,11 @@ html {
 @media screen and (max-width: 992px) {
   .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item a {
     text-align: left;
+  }
+  .header .row .header-right .header-right-item .offcanvas .offcanvas-body .nav-item a i {
+    color: #fff;
+    display: inline;
+    margin-right: 8px;
   }
 }
 
@@ -477,10 +475,6 @@ html {
   border-radius: 100px;
 }
 
-
-.petspa .row {
-  display: flex;
-}
 
 .petspa .row .row-top-petspa {
   display: flex;

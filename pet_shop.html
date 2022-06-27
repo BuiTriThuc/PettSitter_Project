@@ -29,17 +29,18 @@
   <div class="header">
     <div class="container">
       <div class="row">
-        <div class="header-left">
-          <div class="header-logo">
+        <div class="header-left col-xl-8 col-lg-8 col-3">
+          <div class="header-logo col-lg-1 col-sm-3">
             <a href="#">
               <img src="./img/Logo-header.png" alt="" />
             </a>
           </div>
-          <div class="header-nav">
+
+          <div class="header-nav col-lg-11">
             <nav class="navbar d-none d-md-block">
               <ul class="nav-content">
                 <li class="nav-item">
-                  <a href="./home.html">Home</a>
+                  <a href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a href="./lost&found.html">Lost&Found</a>
@@ -50,8 +51,8 @@
                     <i class="fa-solid fa-angle-down"></i>
                   </a>
                   <ul class="submenu">
-                    <li><a href="./pet_shop.html">Pet Item</a></li>
-                      <li><a href="./pet_owner.html">Pet Shop</a></li>
+                    <li><a href="./pet_owner.html">Pet Owner</a></li>
+                    <li><a href="./pet_shop.html">Pet Shop</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -60,7 +61,7 @@
                     <i class="fa-solid fa-angle-down"></i>
                   </a>
                   <ul class="submenu">
-                    <li><a href="#">Spa & Grooming</a></li>
+                    <li><a href="./pet_spa.html">Spa & Grooming</a></li>
                     <li><a href="#">Pet Hotel</a></li>
                     <li><a href="#">Pet Guide</a></li>
                   </ul>
@@ -70,16 +71,146 @@
             </nav>
           </div>
         </div>
-        <div class="header-right">
-          <div class="header-right-item">
+        <div class="header-right col-xl-4 col-lg-4 col-9">
+          <div class="header-right-item col-sm-3">
             <i class="fa-solid fa-magnifying-glass"></i>
             <li class="nav-login"><a href="#">Login</a></li>
-            <a href="./lost&found.html" class="btn-report">REPORT PET</a>
 
-            <i
-              class="fa-solid fa-cart-shopping"
-              style="font-size: 24px; margin-left: 22px"
-            ></i>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Pet Sitter
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                  <form class="d-flex">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </form>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./index.html"
+                      style="margin-top: 20px"
+                    >
+                      <i class="fa-solid fa-house"></i>
+                      Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lost&found.html">
+                      <i class="fa-solid fa-magnifying-glass-location"></i>
+                      Lost&Found
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="offcanvasNavbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-paw"></i>
+                      Shop
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="offcanvasNavbarDropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="./pet_owner.html">
+                          <i class="fa-solid fa-dog"></i>
+                          Pet Item
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./pet_shop.html">
+                          <i class="fa-solid fa-bone"></i>
+                          Pet Shop
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="offcanvasNavbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-hand-holding-heart"></i>
+                      Services
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="offcanvasNavbarDropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="./pet_spa.html">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                          Spa & Grooming
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="fa-solid fa-hotel"></i>
+                          Pet Hotel
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="fa-solid fa-handshake-angle"></i>
+                          Pet Guide
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-handshake-simple"></i>
+                      Contact
+                    </a>
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-right-to-bracket"></i>
+                      Login
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="./lost&found.html" class="btn-report">REPORT PET</a>
           </div>
         </div>
       </div>
