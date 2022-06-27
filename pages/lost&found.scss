@@ -1,5 +1,6 @@
 @import "../common/base";
 @import "../layouts/header";
+@import "../layouts/footer";
 
 .enter-infor {
   background: url("../img/lostbanner.jpg");
@@ -11,12 +12,10 @@
   span {
     color: red;
   }
-  .row-enter {
-    display: flex;
+  .row {
     justify-content: space-around;
 
     .enter-left {
-      width: 50%;
       text-align: center;
       padding-top: 100px;
       h1 {
@@ -29,7 +28,6 @@
       }
     }
     .enter-right {
-      width: 45%;
       background: #fff;
       padding: 25px;
       border-radius: 15px;
@@ -86,6 +84,7 @@
   .row {
     .lost-item {
       .card {
+        border: 2px solid #8d99ae;
         .card-img {
           position: relative;
           img {
@@ -106,7 +105,7 @@
           .pet-id {
             display: flex;
             justify-content: space-between;
-            background: #34303d;
+            background: rgba(#2b2d42, 0.85);
             border-radius: 3px;
             margin-top: 6px;
             color: white;
@@ -124,7 +123,7 @@
           .pet-missing {
             display: flex;
             justify-content: space-between;
-            background: #34303d;
+            background: rgba(#2b2d42, 0.85);
             border-radius: 3px;
             margin-top: 6px;
             color: white;
@@ -142,7 +141,7 @@
           .pet-place {
             display: flex;
             justify-content: space-between;
-            background: #2b2d42;
+            background: rgba(#2b2d42, 0.85);
             border-radius: 3px;
             margin-top: 6px;
             color: white;
@@ -210,6 +209,7 @@
   .row {
     .reunited-item {
       .card {
+        border: 2px solid #8d99ae;
         .card-img {
           position: relative;
           img {
@@ -252,6 +252,115 @@
             margin: 5px 5px 5px 0px;
             color: #636363;
             font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.found {
+  padding: 50px 0px;
+  background-color: #ade8f4;
+  .found-title {
+    h1 {
+      font-weight: 600;
+      color: #262626;
+      padding-bottom: 20px;
+    }
+  }
+  .row {
+    .found-item {
+      .card {
+        border: 2px solid #8d99ae;
+        .card-img {
+          position: relative;
+          img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+          .badge-found {
+            position: absolute;
+            top: -5px;
+            right: -4px;
+          }
+        }
+        .card-content {
+          border: none;
+          padding: 0px 4px 4px 4px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          .pet-id {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(#2b2d42, 0.85);
+            border-radius: 3px;
+            margin-top: 6px;
+            color: white;
+            padding: 4px 8px;
+            font-size: 13px;
+            overflow: hidden;
+            .id-left {
+              width: 30%;
+            }
+            .id-right {
+              width: 30%;
+              text-align: right;
+            }
+          }
+          .pet-missing {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(#2b2d42, 0.85);
+            border-radius: 3px;
+            margin-top: 6px;
+            color: white;
+            padding: 4px 8px;
+            font-size: 13px;
+            overflow: hidden;
+            .missing-left {
+              width: 50%;
+            }
+            .missing-right {
+              width: 50%;
+              text-align: right;
+            }
+          }
+          .pet-place {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(#2b2d42, 0.85);
+            border-radius: 3px;
+            margin-top: 6px;
+            color: white;
+            padding: 4px 8px;
+            font-size: 13px;
+            overflow: hidden;
+            .place-left {
+              width: 50%;
+            }
+            .place-right {
+              width: 50%;
+              text-align: right;
+            }
+          }
+          p {
+            text-align: right;
+            margin: 5px 5px 5px 0px;
+            color: #636363;
+          }
+          .btn-card {
+            width: 100%;
+            background: #0077b6;
+            text-align: center;
+            padding: 5px 0px;
+            border-radius: 5px;
+            .btn-found-info {
+              text-decoration: none;
+              color: #fff;
+              width: 100%;
+              display: block;
+            }
           }
         }
       }
