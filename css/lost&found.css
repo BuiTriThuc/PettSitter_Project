@@ -758,12 +758,9 @@ footer .row .footer-item a:hover {
   padding-bottom: 20px;
 }
 
-.lost .row .lost-item {
-  cursor: pointer;
-}
-
 .lost .row .lost-item .card {
   border: 2px solid #8d99ae;
+  cursor: pointer;
 }
 
 .lost .row .lost-item .card .card-img {
@@ -997,12 +994,9 @@ footer .row .footer-item a:hover {
   padding-bottom: 20px;
 }
 
-.found .row .found-item {
-  cursor: pointer;
-}
-
 .found .row .found-item .card {
   border: 2px solid #8d99ae;
+  cursor: pointer;
 }
 
 .found .row .found-item .card .card-img {
