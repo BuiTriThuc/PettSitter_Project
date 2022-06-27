@@ -145,6 +145,7 @@
   }
   .row {
     .lost-item {
+      cursor: pointer;
       .card {
         border: 2px solid #8d99ae;
         .card-img {
@@ -229,12 +230,17 @@
             text-align: center;
             padding: 5px 0px;
             border-radius: 5px;
+            transition: all 0.4s;
             .btn-lost-info {
               text-decoration: none;
               color: #2b2d42;
               width: 100%;
               display: block;
             }
+          }
+          .btn-card:hover {
+            background: #d90429;
+            transition: all 0.4s;
           }
         }
       }
@@ -333,6 +339,7 @@
   }
   .row {
     .found-item {
+      cursor: pointer;
       .card {
         border: 2px solid #8d99ae;
         .card-img {
@@ -417,12 +424,17 @@
             text-align: center;
             padding: 5px 0px;
             border-radius: 5px;
+            transition: all 0.4s;
             .btn-found-info {
               text-decoration: none;
               color: #fff;
               width: 100%;
               display: block;
             }
+          }
+          .btn-card:hover {
+            background: #0096c7;
+            transition: all 0.4s;
           }
         }
       }

@@ -758,6 +758,10 @@ footer .row .footer-item a:hover {
   padding-bottom: 20px;
 }
 
+.lost .row .lost-item {
+  cursor: pointer;
+}
+
 .lost .row .lost-item .card {
   border: 2px solid #8d99ae;
 }
@@ -871,6 +875,8 @@ footer .row .footer-item a:hover {
   text-align: center;
   padding: 5px 0px;
   border-radius: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .lost .row .lost-item .card .card-content .btn-card .btn-lost-info {
@@ -878,6 +884,12 @@ footer .row .footer-item a:hover {
   color: #2b2d42;
   width: 100%;
   display: block;
+}
+
+.lost .row .lost-item .card .card-content .btn-card:hover {
+  background: #d90429;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .comebackhome {
@@ -983,6 +995,10 @@ footer .row .footer-item a:hover {
   font-weight: 600;
   color: #262626;
   padding-bottom: 20px;
+}
+
+.found .row .found-item {
+  cursor: pointer;
 }
 
 .found .row .found-item .card {
@@ -1098,6 +1114,8 @@ footer .row .footer-item a:hover {
   text-align: center;
   padding: 5px 0px;
   border-radius: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .found .row .found-item .card .card-content .btn-card .btn-found-info {
@@ -1105,5 +1123,11 @@ footer .row .footer-item a:hover {
   color: #fff;
   width: 100%;
   display: block;
+}
+
+.found .row .found-item .card .card-content .btn-card:hover {
+  background: #0096c7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 /*# sourceMappingURL=lost&found.css.map */
