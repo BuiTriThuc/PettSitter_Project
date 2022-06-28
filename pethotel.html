@@ -8,10 +8,438 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/pethotel.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-left col-xl-8 col-lg-8 col-3">
+            <div class="header-logo col-lg-1 col-sm-3">
+              <a href="#">
+                <img src="./img/Logo-header.png" alt="" />
+              </a>
+            </div>
+
+            <div class="header-nav col-lg-11">
+              <nav class="navbar d-none d-md-block">
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./lost&found.html">Lost&Found</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">
+                      Shop
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu">
+                      <li><a href="./pet_owner.html">Pet Owner</a></li>
+                      <li><a href="./pet_shop.html">Pet Shop</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">
+                      Services
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu">
+                      <li><a href="./pet_spa.html">Spa & Grooming</a></li>
+                      <li><a href="#">Pet Hotel</a></li>
+                      <li><a href="#">Pet Guide</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-right col-xl-4 col-lg-4 col-9">
+            <div class="header-right-item col-sm-3">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <li class="nav-login"><a href="#">Login</a></li>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Pet Sitter
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <form class="d-flex">
+                      <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                    </form>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="./index.html"
+                        style="margin-top: 20px"
+                      >
+                        <i class="fa-solid fa-house"></i>
+                        Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./lost&found.html">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                        Lost&Found
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-paw"></i>
+                        Shop
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="./pet_owner.html">
+                            <i class="fa-solid fa-dog"></i>
+                            Pet Item
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./pet_shop.html">
+                            <i class="fa-solid fa-bone"></i>
+                            Pet Shop
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        Services
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="./pet_spa.html">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Spa & Grooming
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-hotel"></i>
+                            Pet Hotel
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            Pet Guide
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                        Contact
+                      </a>
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="carousel">
+      <div class="container">
+        <div class="row">
+          <div class="carousel-left col-xl-6">
+            <div class="carousel-title">
+              <h2>Pet Hotel - Pet Care Service</h2>
+              <h1>WHERE PET CARE COMES FROM THE HEART</h1>
+            </div>
+            <div class="carousel-content">
+              <div class="carousel-item">
+                <div class="carousel-item-left">
+                  <i class="fa-solid fa-shield-dog"></i>
+                </div>
+                <div class="carousel-item-right">
+                  Are you going to be away from home and you don't know where to
+                  send your pet?
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item-left">
+                  <i class="fa-solid fa-shield-dog"></i>
+                </div>
+                <div class="carousel-item-right">
+                  You don't mind bringing your pet with you, but your pet is
+                  afraid of airplanes and feels unwell due to sudden climate
+                  change?
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item-left">
+                  <i class="fa-solid fa-shield-dog"></i>
+                </div>
+                <div class="carousel-item-right">
+                  Worried about not finding the most suitable solution?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-right col-xl-6">
+            <img src="./img/pet-hotel-carousel.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quality">
+      <div class="container">
+        <div class="row">
+          <div class="quality-left col-xl-6">
+            <img src="./img/quality-img.jpg" alt="" />
+          </div>
+          <div class="quality-right col-xl-6">
+            <div class="quality-title">
+              <h1>MORE THAN TAKING CARE OF CATS AND DOGS</h1>
+              <p>
+                We don't just stop at " dog and cat care " but we are committed
+                to taking care of your pet with devotion and love . Your pet
+                will have fun experiences and feel at home:
+              </p>
+            </div>
+            <div class="quality-content">
+              <div class="row">
+                <div class="quality-item quality-item-1 col-xl-6">
+                  <div class="quality-icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <div class="quality-text">
+                    Being in a spacious space, adjusting the temperature
+                    regularly
+                  </div>
+                </div>
+                <div class="quality-item quality-item-2 col-xl-6">
+                  <div class="quality-icon">
+                    <i class="fa-solid fa-shield-cat"></i>
+                  </div>
+                  <div class="quality-text">
+                    Guaranteed fun, eating and resting habits
+                  </div>
+                </div>
+                <div class="quality-item quality-item-3 col-xl-6">
+                  <div class="quality-icon">
+                    <i class="fa-solid fa-hand-lizard"></i>
+                  </div>
+                  <div class="quality-text">
+                    To be cuddled, caressed and interacted
+                  </div>
+                </div>
+                <div class="quality-item quality-item-4 col-xl-6">
+                  <div class="quality-icon">
+                    <i class="fa-solid fa-comments"></i>
+                  </div>
+                  <div class="quality-text">
+                    Participate in movement games and make friends with other
+                    pets
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <h1>PET HOTEL PRICE LIST</h1>
+        <div class="price-list">
+          <img src="./img/price-list-pet-hotel.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="booking"></section>
+    <section class="step"></section>
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="footer-logo col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-5 col-12"
+          >
+            <div class="footer-img mb-4">
+              <a href="#">
+                <img src="./img/Logo-header.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-text">
+              <i class="fa-solid fa-phone"></i>
+              <p>
+                1800-123-4567 <br />
+                +91 987-654-3210
+              </p>
+            </div>
+            <div class="footer-text">
+              <i class="fa-solid fa-envelope"></i>
+              <p>
+                pettsitter@gmail.com <br />
+                service@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="footer-item col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-5 col-12"
+          >
+            <h3>Quick Access</h3>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Lost&Found</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Pet Item</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Pet Shop</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Spa&Grooming</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Pet Hotel</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Pet Guide</span>
+            </a>
+          </div>
+          <div
+            class="footer-item footer-contact col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+          >
+            <h3>Follow Us</h3>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Facebook</span>
+            </a>
+            <i class="fa-brands fa-facebook-square" style="color: #4267b2"></i>
+            <br />
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Youtube</span>
+            </a>
+            <i class="fa-brands fa-youtube" style="color: #ff0000"></i> <br />
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Twitter</span>
+            </a>
+            <i class="fa-brands fa-twitter" style="color: #1da1f2"></i>
+          </div>
+          <div class="footer-item col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <h3>Shop Menu</h3>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Kennel</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Food</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Bag</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Muzzle</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-coppyright">
+      <div class="container">
+        <div class="row">
+          <div class="coppyright-left col-xl-6 col-lg-6 col-md-12">
+            <p>
+              Copyright © 2022 <a href="#">PettSitter</a> . All rights reserved.
+            </p>
+          </div>
+          <div class="coppyright-right col-xl-6 col-lg-6">
+            <a href="#">
+              <i
+                class="fa-brands fa-facebook-f"
+                style="padding: 10px 13px; border-radius: 50%"
+              ></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </body>
 </html>

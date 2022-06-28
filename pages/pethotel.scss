@@ -1,1 +1,129 @@
 @import "../common/base";
+@import "../layouts/header";
+@import "../layouts/footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  background-color: #f8f9fa;
+  padding: 50px 0px;
+  .row {
+    .carousel-left {
+      padding-top: 50px;
+      .carousel-title {
+        padding-bottom: 30px;
+        h2 {
+          color: #ef233c;
+          text-align: center;
+        }
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+      }
+      .carousel-content {
+        display: flex;
+        flex-direction: column;
+        .carousel-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .carousel-item-left {
+            width: 10%;
+            font-size: 36px;
+            text-align: center;
+            color: #d90429;
+          }
+          .carousel-item-right {
+            width: 90%;
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .carousel-right {
+      height: 50%;
+      img {
+        height: 50%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.quality {
+  padding: 50px 0px;
+
+  .row {
+    .quality-left {
+      img {
+        border-radius: 10px;
+        width: 90%;
+      }
+    }
+    .quality-right {
+      width: 50%;
+      .quality-title {
+        padding-bottom: 20px;
+        h1 {
+          color: #ef233c;
+          font-size: 28px;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+        p {
+          width: 80%;
+        }
+      }
+      .quality-content {
+        .quality-item {
+          display: flex;
+          padding: 20px 20px;
+          .quality-icon {
+            width: 25%;
+            font-size: 40px;
+          }
+          .quality-text {
+            width: 65%;
+          }
+        }
+        .quality-item-1 {
+          border-bottom: 2px solid black;
+          border-right: 2px solid black;
+          .quality-icon {
+            color: #70e000;
+          }
+        }
+        .quality-item-2 {
+          border-bottom: 2px solid black;
+          .quality-icon {
+            color: #ee6c4d;
+          }
+        }
+        .quality-item-3 {
+          border-bottom: 2px solid black;
+          border-right: 2px solid black;
+          .quality-icon {
+            color: #ffbc42;
+          }
+        }
+        .quality-item-4 {
+          border-bottom: 2px solid black;
+          .quality-icon {
+            color: #0496ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.price {
+  background: red;
+}
