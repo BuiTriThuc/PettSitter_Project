@@ -11,15 +11,19 @@
   color: $color-black-light;
 }
 
-.carousel {
+.banner {
   background-color: #f8f9fa;
   padding: 30px 0px;
   border: 3px solid black;
   .row {
-    .carousel-left {
+    .banner-left {
       padding-top: 50px;
-      .carousel-title {
+
+      .banner-title {
         padding-bottom: 30px;
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
         h2 {
           color: #ef233c;
           text-align: center;
@@ -30,20 +34,20 @@
           margin-bottom: 15px;
         }
       }
-      .carousel-content {
+      .banner-content {
         display: flex;
         flex-direction: column;
-        .carousel-item {
+        .banner-item {
           display: flex;
           justify-content: center;
           align-items: center;
-          .carousel-item-left {
+          .banner-item-left {
             width: 10%;
             font-size: 36px;
             text-align: center;
             color: #d90429;
           }
-          .carousel-item-right {
+          .banner-item-right {
             width: 90%;
             p {
               font-size: 20px;
@@ -52,10 +56,13 @@
         }
       }
     }
-    .carousel-right {
-      height: 50%;
+    .banner-right {
+      width: 50%;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
       img {
-        height: 50%;
+        width: 100%;
         border-radius: 10px;
       }
     }
@@ -69,13 +76,22 @@
     .quality-left {
       img {
         border-radius: 10px;
-        width: 90%;
+        width: 100%;
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+        }
       }
     }
     .quality-right {
-      width: 50%;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding-top: 30px;
+      }
       .quality-title {
         padding-bottom: 20px;
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+        }
         h1 {
           color: #ef233c;
           font-size: 28px;
@@ -84,12 +100,16 @@
         }
         p {
           width: 80%;
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
         }
       }
       .quality-content {
         .quality-item {
           display: flex;
           padding: 20px 20px;
+
           .quality-icon {
             width: 25%;
             font-size: 40px;
@@ -101,12 +121,18 @@
         .quality-item-1 {
           border-bottom: 3px solid black;
           border-right: 3px solid black;
+          @media screen and (max-width: 1200px) {
+            width: 50%;
+          }
           .quality-icon {
             color: #70e000;
           }
         }
         .quality-item-2 {
           border-bottom: 3px solid black;
+          @media screen and (max-width: 1200px) {
+            width: 50%;
+          }
           .quality-icon {
             color: #ee6c4d;
           }
@@ -114,12 +140,18 @@
         .quality-item-3 {
           border-bottom: 3px solid black;
           border-right: 3px solid black;
+          @media screen and (max-width: 1200px) {
+            width: 50%;
+          }
           .quality-icon {
             color: #ffbc42;
           }
         }
         .quality-item-4 {
           border-bottom: 3px solid black;
+          @media screen and (max-width: 1200px) {
+            width: 50%;
+          }
           .quality-icon {
             color: #0496ff;
           }
@@ -148,7 +180,9 @@
       height: 80%;
       border: 3px solid black;
       background-color: $color-orange-600;
-
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
       h3 {
         border-bottom: 3px solid black;
         padding: 10px 0px;
@@ -197,7 +231,7 @@
   .price-content {
     ul {
       font-size: 20px;
-      color: #636363;
+      color: #495057;
     }
     .price-item {
       p {
@@ -222,6 +256,9 @@
     .booking-left {
       .booking-img {
         width: 80%;
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+        }
         img {
           width: 100%;
         }
@@ -268,6 +305,12 @@
                 box-shadow: 0 0 0 3em $color-orange-600 inset;
                 transition: all 300ms ease;
                 border-radius: 10px;
+                @media screen and (min-width: 1200px) {
+                  padding: 10px 30px;
+                }
+                @media screen and (max-width: 576px) {
+                  padding: 10px 10px;
+                }
               }
               a:hover {
                 box-shadow: 0 0 0 1px #f7fff7 inset;
@@ -302,6 +345,19 @@
         .booking-bottom-img {
           width: 30%;
           padding-right: 20px;
+          @media screen and (max-width: 1200px) {
+            width: 50%;
+          }
+
+          @media screen and (max-width: 992px) {
+            width: 40%;
+          }
+          @media screen and (width: 992px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 768px) {
+            width: 30%;
+          }
           img {
             width: 100%;
           }
@@ -317,6 +373,9 @@
             box-shadow: 0 0 0 3em $color-orange-600 inset;
             transition: all 300ms ease;
             border-radius: 10px;
+            @media screen and (max-width: 576px) {
+              padding: 15px 10px;
+            }
           }
           a:hover {
             box-shadow: 0 0 0 1px #f7fff7 inset;
@@ -339,7 +398,7 @@
     }
     .booking-footer-right {
       margin-top: 50px;
-      border: 1px solid black;
+      border: 2px solid black;
       background-color: $color-green-400;
       .booking-footer-text {
         margin-top: 20px;
@@ -350,6 +409,58 @@
             margin-right: 5px;
           }
         }
+      }
+    }
+  }
+}
+
+.step {
+  padding: 50px 0px;
+  background-color: #f8f9fa;
+  .row {
+    .step-text {
+      border: 3px solid black;
+      padding: 10px;
+      h6 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .step-title {
+      h1 {
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 50px;
+      }
+    }
+    .step-top-left {
+      margin-bottom: 30px;
+      .step-text {
+        background-color: $color-green-400;
+        margin-bottom: 10px;
+      }
+    }
+    .step-top-right {
+      .step-text {
+        margin-top: 10px;
+        background-color: $color-orange-300;
+      }
+    }
+    .step-bottom-left {
+      .step-text {
+        margin-bottom: 10px;
+        background-color: $color-green-700;
+        color: white;
+      }
+    }
+    .step-bottom-right {
+      .step-text {
+        margin-top: 10px;
+        background-color: $color-orange-800;
+        color: #fff;
       }
     }
   }
