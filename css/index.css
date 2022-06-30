@@ -148,6 +148,10 @@ html {
   margin-right: 10px;
 }
 
+.header .row .header-left .header-nav .nav-content .nav-item .current {
+  color: #333533;
+}
+
 .header .row .header-left .header-nav .nav-content .nav-item a:hover {
   color: #333533;
 }
@@ -1491,4 +1495,4 @@ html {
   background: #f48c06;
   width: 100%;
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=index.css.map */

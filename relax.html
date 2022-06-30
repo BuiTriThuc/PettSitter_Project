@@ -1,448 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relax</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Relax</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://w.ladicdn.com/v2/source/ladipage.min.css?v=1648005215692"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link href="https://w.ladicdn.com/v2/source/ladipage.min.css?v=1648005215692" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/pet_spa.css" />
+  </head>
 
-
-  <link rel="stylesheet" href="./css/pet_spa.css" />
-</head>
-
-<body>
-  <div class="header">
-    <div class="container">
-      <div class="row">
-        <div class="header-left col-xl-8 col-lg-7 col-3">
-          <div class="header-logo col-lg-1 col-sm-3">
-            <a href="./index.html">
-              <img src="./img/Logo-header.png" alt="" />
-            </a>
-          </div>
-
-          <div class="header-nav col-lg-11">
-            <nav class="navbar d-none d-md-block">
-              <ul class="nav-content">
-                <li class="nav-item">
-                  <a href="pet_spa.html">Spa&Gromming</a>
-                </li>
-                <li class="nav-item">
-                  <a href="nail.html">Nail</a>
-                </li>
-                <li class="nav-item">
-                  <a href="hair.html">
-                    Hair
-                  </a>
-
-                </li>
-                <li class="nav-item">
-                  <a href="relax.html">
-                    Relax
-                  </a>
-                </li>
-                <li class="nav-item"><a href="wash.html">Bath</a></li>
-                <li class="nav-item"><a href="order.html">Book</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="header-right col-xl-4 col-lg-5 col-7">
-          <div class="header-right-item col-sm-3">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <li class="nav-login"><a href="#">Login</a></li>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon">
-                <i class="fa-solid fa-bars"></i>
-              </span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Pet Sitter
-                </h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                  aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1">
-                  <form class="d-flex">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                  </form>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pet_spa.html"
-                      style="margin-top: 20px">
-                      <i class="fa-solid fa-wand-magic-sparkles"></i>
-                      Spa&Gromming
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nail.html">
-                      <i class="fa-solid fa-paw"></i>
-                      Nail
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="hair.html">
-                      <i class="fa-solid fa-cat"></i>
-                      Hair
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="relax.html">
-                      <i class="fa-solid fa-hands-bubbles"></i>
-                      Relax
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="wash.html">
-                      <i class="fa-solid fa-shower"></i>
-                      Bath
-                    </a>
-                    <a class="nav-link" href="order.html">
-                      <i class="fa-brands fa-wpforms"></i>
-                      Book
-                    </a>
-                  </li>
-                </ul>
-              </div>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-left col-xl-8 col-lg-7 col-3">
+            <div class="header-logo col-lg-1 col-sm-3">
+              <a href="./index.html">
+                <img src="./img/Logo-header.png" alt="" />
+              </a>
             </div>
-            <a href="./lost&found.html" class="btn-report">REPORT PET</a>
-            <!-- <i
+
+            <div class="header-nav col-lg-11">
+              <nav class="navbar d-none d-md-block">
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="pet_spa.html">Spa&Gromming</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="nail.html">Nail</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="hair.html"> Hair </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="current" href="relax.html"> Relax </a>
+                  </li>
+                  <li class="nav-item"><a href="wash.html">Bath</a></li>
+                  <li class="nav-item"><a href="order.html">Book</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-right col-xl-4 col-lg-5 col-7">
+            <div class="header-right-item col-sm-3">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <li class="nav-login"><a href="#">Login</a></li>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Pet Sitter
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <form class="d-flex">
+                      <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                    </form>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="pet_spa.html"
+                        style="margin-top: 20px"
+                      >
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Spa&Gromming
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="nail.html">
+                        <i class="fa-solid fa-paw"></i>
+                        Nail
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="hair.html">
+                        <i class="fa-solid fa-cat"></i>
+                        Hair
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="relax.html">
+                        <i class="fa-solid fa-hands-bubbles"></i>
+                        Relax
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="wash.html">
+                        <i class="fa-solid fa-shower"></i>
+                        Bath
+                      </a>
+                      <a class="nav-link" href="order.html">
+                        <i class="fa-brands fa-wpforms"></i>
+                        Book
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="./lost&found.html" class="btn-report">REPORT PET</a>
+              <!-- <i
               class="fa-solid fa-cart-shopping cart-header"
               style="font-size: 24px; margin-left: 22px"
             ></i> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row-nail-pr">
-    <div class="test-scroll-script" onscroll="myFunction()">
-
-      <div class="background-color-all">
-        <div class="container">
-          <div class="title-relax">
-            <h1 class="big-title">When your pet is stressed out, what should you do?</h1>
-            <p class="padding-p-relax"> Many people still believe that the difference between humans and pets is largely
-              due
-              to emotions. They think
-              that pets like dogs and cats have no feelings, but in fact, this is completely wrong. As everyone knows,
-              dogs
-              are pets that have been domesticated by humans for a long time, they have lived with humans for a long
-              time,
-              so
-              they always tend to want to be closer to their owners. They have feelings, they also know how to
-              distinguish
-              between friends and enemies and of course they can also be "Shocked" when they encounter something. Such
-              “shocks” can cause long-lasting depression that is difficult to treat</p>
-          </div>
-          <div>
-            <h3 class="small-title">When your pet is stressed out, what should you do?</h3>
-            <div class="img-center">
-              <img src="img/first-img-relax.jpg" alt="">
-              <p class="text-center">Stress in Dogs</p>
-            </div>
-            <p class="padding-p-relax">Pets are often very sensitive to the change of the living environment, such as
-              when
-              they move to a new home or
-              when the house appears a new member. At times like this, our pet will often have some shock signs, often
-              they
-              will become uncomfortable or bite and sad. There are even some cases, pets may vomit, skin rash, diarrhea,
-              stop
-              eating or appetite.</p>
-          </div>
-          <div>
-            <h3 class="small-title">Causes of stress in pets</h3>
-            <div class="img-center">
-              <img src="img/second-img-relax.jpg" alt="">
-              <p class="text-center">Stress in Cats</p>
-            </div>
-            <ul>
-              <li>Added or lost a family member: The most common case is that the owner no longer spends much time with
-                them
-                due to being too busy. According to statistics in the UK, an average of 1 in 4 pets suffers from
-                psychological
-                problems because the owner often goes to work and does not spend much time with them. In addition, when
-                the
-                owner's mood is too stressed or stressed, their pets is also affected.</li>
-              <li> When there is a new member in their family: This is also considered one of the most common causes of
-                depression in pets. </li>
-              <li> Moving to a new place.</li>
-              <li>Age-related depression: As your pets gets older, your pets may experience some decline in functional
-                functions such as eating, limping, blurred vision, etc. Because these are important activities that
-                affect
-                quality. Life, so our pets is very susceptible to depression because it can no longer maintain the same
-                rhythm
-                of life as before.</li>
-              <li>Weather-related depression: If you live in areas with extreme weather conditions, your pets is more
-                likely
-                to become depressed if the weather changes for the worse. </li>
-            </ul>
-            <div>
-              <h3 class="small-title">Symptoms of depression in pets</h3>
-              <div class="img-center">
-                <img src="img/third-img-relax.png" alt="">
-                <p class="text-center">Dog and Cat stress out</p>
-              </div>
-              <ul>
-                <li>Reduce physical activity: Our pets no longer runs around or plays like usual, instead they just curl
-                  up
-                  and sleep all day.
-                </li>
-                <li>Eating less or even not eating, this can lead to changes in weight and sometimes it will affect
-                  their
-                  health.
-                </li>
-                <li>Depression can make your pets change his personality, they become lethargic, aggressive and
-                  sometimes
-                  even
-                  pee in the house.
-                </li>
-                <li>Sleep changes: Their abnormal sleep rhythm is also an easy sign to recognize, when stressed they
-                  often
-                  prefer to sleep during the day and wake up at night.
-                </li>
-                <p>
-                  <strong>Note:</strong>
-                  <em> It is important to clearly distinguish between symptoms that cause physical and
-                    psychological illness, for example, a sad pet that no longer likes to run and jump can also be
-                    caused
-                    by
-                    pain from arthritis.
-                  </em>
-                </p>
-              </ul>
-            </div>
-            <div>
-              <h3 class="small-title">6 Proven Ways to Calm Your Anxious pets</h3>
-              <h5>1. Exercise Your Pets</h5>
-              <div class="padding-p-relax">
-                <p>If your pets has separation anxiety, the obvious way to ease their mind is to never leave them alone.
-                  That is
-                  not a reality for most pet owners, so using exercise as both a bonding time and to tire out your pet
-                  is
-                  often
-                  an easy fix!
-                </p>
-                <p>
-                  Because anxiety can cause an excess of energy, taking your pets out to play ball or on a long walk
-                  before
-                  you
-                  leave can be helpful. Providing plenty of physical contacts and talking to them during this time is
-                  also
-                  beneficial. And, like their human counterparts, exercise can help relieve stress by producing
-                  beneficial
-                  endorphins.</p>
-              </div>
-              <h5 class="small-title">2. Physical Contact</h5>
-              <p class="padding-p-relax">There is probably nothing more soothing to anxious pets than their owner’s
-                touch.
-                Try to identify the signs
-                of anxiety in your pets and nip them in the bud as early as possible by picking them up, cuddling on the
-                couch, or giving them a good long petting session.</p>
-              <h5 class="small-title">3. Massage</h5>
-              <p class="padding-p-relax">As you probably know, a massage will relax and calm even the most anxious human
-                —
-                did you know it also works
-                wonders with pets as well?! Anxiety often causes tensing of the muscles and massage therapy is one way
-                to
-                alleviate tension. Start at the neck and work downward with long strokes. Try to keep one hand on the
-                pets,
-                while the other works to massage. Over time you may even be able to identify where your pets hold their
-                stress
-                and just work on that one particular area.
-              </p>
-              <h5 class="small-title">4. Music Therapy</h5>
-              <p class="padding-p-relax">Music therapy has been proven to be beneficial for both humans, as well as our
-                canine and feline friends. The
-                power of music can be calming and relaxing while you’re home, in the car, or away from your pet. Music
-                can
-                also alleviate noise sensitivity by blocking the street or scary noises that bothersome pets and create
-                anxiety.</p>
-              <p>Research has shown that many pets prefer classical music. Harp music, often used in hospice situations,
-                can
-                be a natural sedative. You might try:
-              </p>
-              <ul>
-                <li>Through A Dog’s Ear by pianist Lisa Spector and psychoacoustics researcher Joshua Leeds
-                </li>
-                <li>Noah’s Harp: Surrender by Susan Raimond</li>
-              </ul>
-              <h5 class="small-title">5. Time-Out</h5>
-              <p class="padding-p-relax">While anxiety isn’t a bad behavior per se, it can help to give your pets some
-                time-out when they’re acting
-                out. Isolating your pet in a safe and quiet space can help calm their frayed nerves. Maybe that space
-                has
-                some
-                very quiet music playing, low lights, and/or some aromatherapy available</p>
-              <h5 class="small-title">6. Alternative Therapies</h5>
+    <div class="row-nail-pr">
+      <div class="test-scroll-script" onscroll="myFunction()">
+        <div class="background-color-all">
+          <div class="container">
+            <div class="title-relax">
+              <h1 class="big-title">
+                When your pet is stressed out, what should you do?
+              </h1>
               <p class="padding-p-relax">
-                While there is limited evidence that alternative products can be of benefit to dogs suffering from
-                anxiety,
-                the products listed below are non-invasive and will cause no harm. They are therapies that can be used
-                alone
-                or combined with those above to be more effective. Be sure to do proper research before implementing
-                alternative therapies, and consult with your veterinarian, too.</p>
-              <h6 class="small-title">Rescue Remedy for Pets</h6>
-              <p class="padding-p-relax">Rescue Remedy is part of the Bach homeopathic line of remedies for humans.
-                Homeopathy was founded over 200
-                years ago and is popular in Europe and England. (The Queen even has her own Royal Homepath.) It is based
-                on
-                the principle of similarity and uses plants and flower in all remedies.</p>
-              <p class="padding-p-relax">Rescue Remedy Pet is comprised of 5 different Bach Flower Remedies that
-                constitute
-                a stress reliever. It is
-                completely safe to use on your dog. You just add 2-4 drops directly to their drinking water. There is
-                also
-                a
-                spray that you can use on pet bedding and toys.</p>
-              <p class="padding-p-relax">Note: There are other homeopathic remedies that can be used on pets for
-                specific
-                issues, like constant
-                barking, intolerance toward strangers, or loss of an owner.</p>
-              <h6 class="small-title"> Supplements</h6>
-              <p class="padding-p-relax">There are dog treats that contain helpful supplements proven to help anxiety.
-                Typically they will contain
-                melatonin, thiamin, chamomile, L-Theanine or L-tryptophan. Some also have a ginger element to help with
-                sensitive stomachs. These are often recommended for general and travel anxiety.</p>
+                Many people still believe that the difference between humans and
+                pets is largely due to emotions. They think that pets like dogs
+                and cats have no feelings, but in fact, this is completely
+                wrong. As everyone knows, dogs are pets that have been
+                domesticated by humans for a long time, they have lived with
+                humans for a long time, so they always tend to want to be closer
+                to their owners. They have feelings, they also know how to
+                distinguish between friends and enemies and of course they can
+                also be "Shocked" when they encounter something. Such “shocks”
+                can cause long-lasting depression that is difficult to treat
+              </p>
+            </div>
+            <div>
+              <h3 class="small-title">
+                When your pet is stressed out, what should you do?
+              </h3>
+              <div class="img-center">
+                <img src="img/first-img-relax.jpg" alt="" />
+                <p class="text-center">Stress in Dogs</p>
+              </div>
+              <p class="padding-p-relax">
+                Pets are often very sensitive to the change of the living
+                environment, such as when they move to a new home or when the
+                house appears a new member. At times like this, our pet will
+                often have some shock signs, often they will become
+                uncomfortable or bite and sad. There are even some cases, pets
+                may vomit, skin rash, diarrhea, stop eating or appetite.
+              </p>
+            </div>
+            <div>
+              <h3 class="small-title">Causes of stress in pets</h3>
+              <div class="img-center">
+                <img src="img/second-img-relax.jpg" alt="" />
+                <p class="text-center">Stress in Cats</p>
+              </div>
+              <ul>
+                <li>
+                  Added or lost a family member: The most common case is that
+                  the owner no longer spends much time with them due to being
+                  too busy. According to statistics in the UK, an average of 1
+                  in 4 pets suffers from psychological problems because the
+                  owner often goes to work and does not spend much time with
+                  them. In addition, when the owner's mood is too stressed or
+                  stressed, their pets is also affected.
+                </li>
+                <li>
+                  When there is a new member in their family: This is also
+                  considered one of the most common causes of depression in
+                  pets.
+                </li>
+                <li>Moving to a new place.</li>
+                <li>
+                  Age-related depression: As your pets gets older, your pets may
+                  experience some decline in functional functions such as
+                  eating, limping, blurred vision, etc. Because these are
+                  important activities that affect quality. Life, so our pets is
+                  very susceptible to depression because it can no longer
+                  maintain the same rhythm of life as before.
+                </li>
+                <li>
+                  Weather-related depression: If you live in areas with extreme
+                  weather conditions, your pets is more likely to become
+                  depressed if the weather changes for the worse.
+                </li>
+              </ul>
+              <div>
+                <h3 class="small-title">Symptoms of depression in pets</h3>
+                <div class="img-center">
+                  <img src="img/third-img-relax.png" alt="" />
+                  <p class="text-center">Dog and Cat stress out</p>
+                </div>
+                <ul>
+                  <li>
+                    Reduce physical activity: Our pets no longer runs around or
+                    plays like usual, instead they just curl up and sleep all
+                    day.
+                  </li>
+                  <li>
+                    Eating less or even not eating, this can lead to changes in
+                    weight and sometimes it will affect their health.
+                  </li>
+                  <li>
+                    Depression can make your pets change his personality, they
+                    become lethargic, aggressive and sometimes even pee in the
+                    house.
+                  </li>
+                  <li>
+                    Sleep changes: Their abnormal sleep rhythm is also an easy
+                    sign to recognize, when stressed they often prefer to sleep
+                    during the day and wake up at night.
+                  </li>
+                  <p>
+                    <strong>Note:</strong>
+                    <em>
+                      It is important to clearly distinguish between symptoms
+                      that cause physical and psychological illness, for
+                      example, a sad pet that no longer likes to run and jump
+                      can also be caused by pain from arthritis.
+                    </em>
+                  </p>
+                </ul>
+              </div>
+              <div>
+                <h3 class="small-title">
+                  6 Proven Ways to Calm Your Anxious pets
+                </h3>
+                <h5>1. Exercise Your Pets</h5>
+                <div class="padding-p-relax">
+                  <p>
+                    If your pets has separation anxiety, the obvious way to ease
+                    their mind is to never leave them alone. That is not a
+                    reality for most pet owners, so using exercise as both a
+                    bonding time and to tire out your pet is often an easy fix!
+                  </p>
+                  <p>
+                    Because anxiety can cause an excess of energy, taking your
+                    pets out to play ball or on a long walk before you leave can
+                    be helpful. Providing plenty of physical contacts and
+                    talking to them during this time is also beneficial. And,
+                    like their human counterparts, exercise can help relieve
+                    stress by producing beneficial endorphins.
+                  </p>
+                </div>
+                <h5 class="small-title">2. Physical Contact</h5>
+                <p class="padding-p-relax">
+                  There is probably nothing more soothing to anxious pets than
+                  their owner’s touch. Try to identify the signs of anxiety in
+                  your pets and nip them in the bud as early as possible by
+                  picking them up, cuddling on the couch, or giving them a good
+                  long petting session.
+                </p>
+                <h5 class="small-title">3. Massage</h5>
+                <p class="padding-p-relax">
+                  As you probably know, a massage will relax and calm even the
+                  most anxious human — did you know it also works wonders with
+                  pets as well?! Anxiety often causes tensing of the muscles and
+                  massage therapy is one way to alleviate tension. Start at the
+                  neck and work downward with long strokes. Try to keep one hand
+                  on the pets, while the other works to massage. Over time you
+                  may even be able to identify where your pets hold their stress
+                  and just work on that one particular area.
+                </p>
+                <h5 class="small-title">4. Music Therapy</h5>
+                <p class="padding-p-relax">
+                  Music therapy has been proven to be beneficial for both
+                  humans, as well as our canine and feline friends. The power of
+                  music can be calming and relaxing while you’re home, in the
+                  car, or away from your pet. Music can also alleviate noise
+                  sensitivity by blocking the street or scary noises that
+                  bothersome pets and create anxiety.
+                </p>
+                <p>
+                  Research has shown that many pets prefer classical music. Harp
+                  music, often used in hospice situations, can be a natural
+                  sedative. You might try:
+                </p>
+                <ul>
+                  <li>
+                    Through A Dog’s Ear by pianist Lisa Spector and
+                    psychoacoustics researcher Joshua Leeds
+                  </li>
+                  <li>Noah’s Harp: Surrender by Susan Raimond</li>
+                </ul>
+                <h5 class="small-title">5. Time-Out</h5>
+                <p class="padding-p-relax">
+                  While anxiety isn’t a bad behavior per se, it can help to give
+                  your pets some time-out when they’re acting out. Isolating
+                  your pet in a safe and quiet space can help calm their frayed
+                  nerves. Maybe that space has some very quiet music playing,
+                  low lights, and/or some aromatherapy available
+                </p>
+                <h5 class="small-title">6. Alternative Therapies</h5>
+                <p class="padding-p-relax">
+                  While there is limited evidence that alternative products can
+                  be of benefit to dogs suffering from anxiety, the products
+                  listed below are non-invasive and will cause no harm. They are
+                  therapies that can be used alone or combined with those above
+                  to be more effective. Be sure to do proper research before
+                  implementing alternative therapies, and consult with your
+                  veterinarian, too.
+                </p>
+                <h6 class="small-title">Rescue Remedy for Pets</h6>
+                <p class="padding-p-relax">
+                  Rescue Remedy is part of the Bach homeopathic line of remedies
+                  for humans. Homeopathy was founded over 200 years ago and is
+                  popular in Europe and England. (The Queen even has her own
+                  Royal Homepath.) It is based on the principle of similarity
+                  and uses plants and flower in all remedies.
+                </p>
+                <p class="padding-p-relax">
+                  Rescue Remedy Pet is comprised of 5 different Bach Flower
+                  Remedies that constitute a stress reliever. It is completely
+                  safe to use on your dog. You just add 2-4 drops directly to
+                  their drinking water. There is also a spray that you can use
+                  on pet bedding and toys.
+                </p>
+                <p class="padding-p-relax">
+                  Note: There are other homeopathic remedies that can be used on
+                  pets for specific issues, like constant barking, intolerance
+                  toward strangers, or loss of an owner.
+                </p>
+                <h6 class="small-title">Supplements</h6>
+                <p class="padding-p-relax">
+                  There are dog treats that contain helpful supplements proven
+                  to help anxiety. Typically they will contain melatonin,
+                  thiamin, chamomile, L-Theanine or L-tryptophan. Some also have
+                  a ginger element to help with sensitive stomachs. These are
+                  often recommended for general and travel anxiety.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
       <div>
-        <div class="test-scroll-cart" onscroll="myFunction()">
-
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/dochoi-relax.png" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Colorful spherical toys for pets
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+        <div>
+          <div class="test-scroll-cart" onscroll="myFunction()">
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/dochoi-relax.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Colorful spherical toys for pets</p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/dochoi2-relax.png" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Pet stuffed fish set for pets
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/dochoi2-relax.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Pet stuffed fish set for pets</p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/chuong-cho-go.jpg" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  The house is made of wood for dogs weighing under 30kg
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/chuong-cho-go.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    The house is made of wood for dogs weighing under 30kg
+                  </p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/dog_1.jpg" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  The small dog belongs to the Beaglier breed with 2 -colored white and brown hairs
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/dog_1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    The small dog belongs to the Beaglier breed with 2 -colored
+                    white and brown hairs
+                  </p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/dog_3.jpg" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  The Alaska dog has a smooth platinum coat
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/dog_3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    The Alaska dog has a smooth platinum coat
+                  </p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/dog_4.jpg" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  The Alaska dog weighs over 30kg with ruffled and brown coat
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/dog_4.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    The Alaska dog weighs over 30kg with ruffled and brown coat
+                  </p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-shop-item">
-            <div class="card">
-              <div class="card-img">
-                <a href="#">
-                  <img src="img/card/food-pet-final.jpg" class="card-img-top" alt="..." />
-                </a>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Nutrition food for dogs
-                </p>
-                <div class="shop-infor">
-                  <a href="#">More Info</a>
+            <div class="row-shop-item">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="img/card/food-pet-final.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Nutrition food for dogs</p>
+                  <div class="shop-infor">
+                    <a href="#">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -450,163 +534,186 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="hotline-phone-ring-wrap">
-    <div class="hotline-phone-ring">
-      <div class="hotline-phone-ring-circle">&nbsp;</div>
-      <div class="hotline-phone-ring-circle-fill">&nbsp;</div>
-      <div class="hotline-phone-ring-img-circle"><span style="color: #f2f2f2;"><a class="pps-btn-img"
-            style="color: #f2f2f2;" href="tel:0856597778">
-            <img src="https://lutaweb.com/wp-content/uploads/2020/06/icon-call-nh.png" alt="Gọi điện thoại" width="50">
-          </a>
-        </span>
+    <div class="hotline-phone-ring-wrap">
+      <div class="hotline-phone-ring">
+        <div class="hotline-phone-ring-circle">&nbsp;</div>
+        <div class="hotline-phone-ring-circle-fill">&nbsp;</div>
+        <div class="hotline-phone-ring-img-circle">
+          <span style="color: #f2f2f2"
+            ><a
+              class="pps-btn-img"
+              style="color: #f2f2f2"
+              href="tel:0856597778"
+            >
+              <img
+                src="https://lutaweb.com/wp-content/uploads/2020/06/icon-call-nh.png"
+                alt="Gọi điện thoại"
+                width="50"
+              />
+            </a>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-logo col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-5 col-12">
-          <div class="footer-img mb-4">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="footer-logo col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-5 col-12"
+          >
+            <div class="footer-img mb-4">
+              <a href="#">
+                <img src="./img/Logo-header.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-text">
+              <i class="fa-solid fa-phone"></i>
+              <p>
+                1800-123-4567 <br />
+                +91 987-654-3210
+              </p>
+            </div>
+            <div class="footer-text">
+              <i class="fa-solid fa-envelope"></i>
+              <p>
+                pettsitter@gmail.com <br />
+                service@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="footer-item col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-5 col-12"
+          >
+            <h3>Quick Access</h3>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Lost&Found</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Pet Item</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Pet Shop</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Spa&Grooming</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Pet Hotel</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
             <a href="#">
-              <img src="./img/Logo-header.png" alt="" />
+              <span>Pet Guide</span>
             </a>
           </div>
-          <div class="footer-text">
-            <i class="fa-solid fa-phone"></i>
+          <div
+            class="footer-item footer-contact col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
+          >
+            <h3>Follow Us</h3>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Facebook</span>
+            </a>
+            <i class="fa-brands fa-facebook-square" style="color: #4267b2"></i>
+            <br />
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Youtube</span>
+            </a>
+            <i class="fa-brands fa-youtube" style="color: #ff0000"></i> <br />
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Twitter</span>
+            </a>
+            <i class="fa-brands fa-twitter" style="color: #1da1f2"></i>
+          </div>
+          <div class="footer-item col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <h3>Shop Menu</h3>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Kennel</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Food</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"> <span>Bag</span> <br /> </a>
+
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">
+              <span>Muzzle</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-coppyright">
+      <div class="container">
+        <div class="row">
+          <div class="coppyright-left col-xl-6 col-lg-6 col-md-12">
             <p>
-              1800-123-4567 <br />
-              +91 987-654-3210
+              Copyright © 2022 <a href="#">PettSitter</a> . All rights reserved.
             </p>
           </div>
-          <div class="footer-text">
-            <i class="fa-solid fa-envelope"></i>
-            <p>
-              pettsitter@gmail.com <br />
-              service@gmail.com
-            </p>
+          <div class="coppyright-right col-xl-6 col-lg-6">
+            <a href="#">
+              <i
+                class="fa-brands fa-facebook-f"
+                style="padding: 10px 13px; border-radius: 50%"
+              ></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </div>
         </div>
+      </div>
+    </div>
+    <i id="backtop" class="fas fa-chevron-up"></i>
 
-        <div class="footer-item col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-5 col-12">
-          <h3>Quick Access</h3>
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Lost&Found</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Pet Item</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Pet Shop</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Spa&Grooming</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Pet Hotel</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#">
-            <span>Pet Guide</span>
-          </a>
-        </div>
-        <div class="footer-item footer-contact col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-          <h3>Follow Us</h3>
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#">
-            <span>Facebook</span>
-          </a>
-          <i class="fa-brands fa-facebook-square" style="color: #4267b2"></i>
-          <br />
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#">
-            <span>Youtube</span>
-          </a>
-          <i class="fa-brands fa-youtube" style="color: #ff0000"></i> <br />
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#">
-            <span>Twitter</span>
-          </a>
-          <i class="fa-brands fa-twitter" style="color: #1da1f2"></i>
-        </div>
-        <div class="footer-item col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-          <h3>Shop Menu</h3>
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Kennel</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Food</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#"> <span>Bag</span> <br /> </a>
-
-          <i class="fa-solid fa-angle-right"></i>
-          <a href="#">
-            <span>Muzzle</span>
-          </a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <div data-action="true" id="BUTTON385" class="ladi-element ladi-animation">
+      <div class="ladi-button">
+        <div class="ladi-button-background"></div>
+        <div id="BUTTON_TEXT385" class="ladi-element">
+          <a class="ladi-headline" href="order.html">Book Now</a>
         </div>
       </div>
     </div>
-  </footer>
-  <div class="footer-coppyright">
-    <div class="container">
-      <div class="row">
-        <div class="coppyright-left col-xl-6 col-lg-6 col-md-12">
-          <p>
-            Copyright © 2022 <a href="#">PettSitter</a> . All rights reserved.
-          </p>
-        </div>
-        <div class="coppyright-right col-xl-6 col-lg-6">
-          <a href="#">
-            <i class="fa-brands fa-facebook-f" style="padding: 10px 13px; border-radius: 50%"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <i id="backtop" class="fas fa-chevron-up"></i>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <div data-action="true" id="BUTTON385" class="ladi-element ladi-animation">
-    <div class="ladi-button">
-      <div class="ladi-button-background"></div>
-      <div id="BUTTON_TEXT385" class="ladi-element">
-        <a class="ladi-headline" href="order.html">Book Now</a>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".test-scroll-script").scroll(function () {
+        if ($(this).scrollTop()) {
+          $("#backtop").fadeIn();
+        } else {
+          $("#backtop").fadeOut();
+        }
+      });
+      $("#backtop").click(function () {
+        $(".test-scroll-script").animate(
+          {
+            scrollTop: 0,
+          },
+          1000
+        );
+      });
+    });
   </script>
-<script>
-  $(document).ready(function () {
-    $('.test-scroll-script').scroll(function () {
-      if ($(this).scrollTop()) {
-        $('#backtop').fadeIn();
-      } else {
-        $('#backtop').fadeOut();
-      }
-    });
-    $("#backtop").click(function () {
-      $('.test-scroll-script').animate({
-        scrollTop: 0
-      }, 1000);
-
-    });
-  });
-</script>
-
 </html>

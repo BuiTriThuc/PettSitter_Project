@@ -161,6 +161,9 @@ html {
   transition: all 0.4s;
   margin-right: 10px;
 }
+.header .row .header-left .header-nav .nav-content .nav-item .current {
+  color: #333533;
+}
 
 .header .row .header-left .header-nav .nav-content .nav-item a:hover {
   color: #333533;

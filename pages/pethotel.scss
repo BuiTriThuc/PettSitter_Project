@@ -7,9 +7,14 @@
   box-sizing: border-box;
 }
 
+.lost-nav {
+  color: $color-black-light;
+}
+
 .carousel {
   background-color: #f8f9fa;
-  padding: 50px 0px;
+  padding: 30px 0px;
+  border: 3px solid black;
   .row {
     .carousel-left {
       padding-top: 50px;
@@ -94,27 +99,27 @@
           }
         }
         .quality-item-1 {
-          border-bottom: 2px solid black;
-          border-right: 2px solid black;
+          border-bottom: 3px solid black;
+          border-right: 3px solid black;
           .quality-icon {
             color: #70e000;
           }
         }
         .quality-item-2 {
-          border-bottom: 2px solid black;
+          border-bottom: 3px solid black;
           .quality-icon {
             color: #ee6c4d;
           }
         }
         .quality-item-3 {
-          border-bottom: 2px solid black;
-          border-right: 2px solid black;
+          border-bottom: 3px solid black;
+          border-right: 3px solid black;
           .quality-icon {
             color: #ffbc42;
           }
         }
         .quality-item-4 {
-          border-bottom: 2px solid black;
+          border-bottom: 3px solid black;
           .quality-icon {
             color: #0496ff;
           }
@@ -125,5 +130,227 @@
 }
 
 .price {
-  background: red;
+  padding: 50px 0px;
+  background-color: $color-green-400;
+  h1 {
+    text-align: center;
+    color: #ef233c;
+    padding-bottom: 50px;
+    font-weight: 700;
+  }
+  .price-list {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    .price-list-item {
+      width: 40%;
+      height: 80%;
+      border: 3px solid black;
+      background-color: $color-orange-600;
+
+      h3 {
+        border-bottom: 3px solid black;
+        padding: 10px 0px;
+        font-weight: 700;
+        font-size: 34px;
+      }
+      .row {
+        margin: 0%;
+        .price-left {
+          padding: 0%;
+          h6 {
+            padding: 10px 0 30px 0;
+            font-size: 30px;
+          }
+
+          p {
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            margin: 0%;
+            font-size: 24px;
+            padding: 20px 0px;
+          }
+          .last-price {
+            border-bottom: none;
+          }
+        }
+        .price-right {
+          padding: 0%;
+          h6 {
+            padding: 10px 0 30px 0;
+            font-size: 30px;
+          }
+          p {
+            border-bottom: 3px solid black;
+            margin: 0%;
+            font-size: 24px;
+            padding: 20px 0px;
+          }
+          .last-price {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  .price-content {
+    ul {
+      font-size: 20px;
+      color: #636363;
+    }
+    .price-item {
+      p {
+        font-size: 20px;
+
+        i {
+          padding: 6px;
+          border-radius: 50%;
+          border: 1px solid $color-orange-600;
+          background: $color-orange-600;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.booking {
+  padding: 50px 0px;
+  .row {
+    justify-content: center;
+    .booking-left {
+      .booking-img {
+        width: 80%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .booking-right {
+      padding: 15px 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: $color-green-400;
+      .booking-title {
+        text-align: center;
+        padding-bottom: 20px;
+        h1 {
+          font-weight: 600;
+        }
+      }
+      .booking-content {
+        .booking-item {
+          display: flex;
+          .booking-item-left {
+            width: 60%;
+            padding-right: 22px;
+            input {
+              width: 100%;
+              height: 50px;
+              text-align: center;
+              margin-bottom: 33px;
+              border-radius: 5px;
+            }
+            input::placeholder {
+              text-align: center;
+              color: #000;
+            }
+
+            .btn-booking {
+              text-align: center;
+              a {
+                text-decoration: none;
+                padding: 10px 50px;
+                border: 1px solid black;
+                color: #000;
+                background-color: $color-orange-600;
+                box-shadow: 0 0 0 3em $color-orange-600 inset;
+                transition: all 300ms ease;
+                border-radius: 10px;
+              }
+              a:hover {
+                box-shadow: 0 0 0 1px #f7fff7 inset;
+                transition: all 300ms ease;
+                background-color: $color-green-400;
+                border: 1px solid $color-green-400;
+                color: #000;
+              }
+            }
+          }
+          .booking-item-right {
+            width: 70%;
+            textarea::placeholder {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+    .booking-bottom-right {
+      .booking-bottom-right-icon {
+        text-align: center;
+        padding-top: 10px;
+        i {
+          font-size: 50px;
+          font-weight: 900;
+        }
+      }
+      .booking-bottom-right-content {
+        display: flex;
+        align-items: center;
+        .booking-bottom-img {
+          width: 30%;
+          padding-right: 20px;
+          img {
+            width: 100%;
+          }
+        }
+        .booking-bottom-button {
+          width: 100%;
+          a {
+            text-decoration: none;
+            padding: 15px 45px;
+            border: 1px solid black;
+            color: #000;
+            background-color: $color-orange-600;
+            box-shadow: 0 0 0 3em $color-orange-600 inset;
+            transition: all 300ms ease;
+            border-radius: 10px;
+          }
+          a:hover {
+            box-shadow: 0 0 0 1px #f7fff7 inset;
+            transition: all 300ms ease;
+            background-color: #000;
+            border: 1px solid #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .booking-footer-left {
+      padding-top: 50px;
+      .booking-footer-img {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .booking-footer-right {
+      margin-top: 50px;
+      border: 1px solid black;
+      background-color: $color-green-400;
+      .booking-footer-text {
+        margin-top: 20px;
+        p {
+          font-size: 22px;
+          font-weight: 300;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
 }
