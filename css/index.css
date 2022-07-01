@@ -1484,11 +1484,15 @@ html {
   font-size: 20px;
 }
 
-.contact .row .contact-right .choose-role button {
+.contact .row .contact-right .choose-role .inactive {
   margin-bottom: 16px;
   margin-right: 10px;
   background: transparent;
   padding: 5px 15px;
+}
+
+.contact .row .contact-right .choose-role .active {
+  background-color: #f48c06;
 }
 
 .contact .row .contact-right .btn {

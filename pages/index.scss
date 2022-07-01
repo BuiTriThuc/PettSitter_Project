@@ -672,11 +672,14 @@ html {
         font-size: 20px;
       }
       .choose-role {
-        button {
+        .inactive {
           margin-bottom: 16px;
           margin-right: 10px;
           background: transparent;
           padding: 5px 15px;
+        }
+        .active {
+          background-color: $color-orange-600;
         }
       }
 

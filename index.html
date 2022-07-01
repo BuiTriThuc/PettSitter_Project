@@ -639,11 +639,13 @@
             >
             <br />
             <div class="choose-role">
-              <button>Loser Pet</button>
-              <button>Finder Pet</button>
+              <button class="btn-loserPet inactive" id="loserPetId">
+                Loser Pet
+              </button>
+              <button class="inactive" id="finderPetId">Finder Pet</button>
 
-              <button>Customer</button>
-              <button>Other</button>
+              <button class="inactive" id="customerId">Customer</button>
+              <button class="inactive" id="otherId">Other</button>
             </div>
             <div class="mb-3 form-text">
               <input
@@ -796,5 +798,14 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $("#loserPetId").click(function () {
+          $("#loserPetId").removeClass("active").addClass("inactive");
+          $(this).removeClass("inactive").addClass("active");
+        });
+      });
+    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
