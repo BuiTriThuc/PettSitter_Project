@@ -28,7 +28,7 @@
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="header-left col-xl-8 col-lg-8 col-3">
+          <div class="header-left col-xl-7 col-lg-8 col-3">
             <div class="header-logo col-lg-1 col-sm-3">
               <a href="#">
                 <img src="./img/Logo-header.png" alt="" />
@@ -70,9 +70,22 @@
               </nav>
             </div>
           </div>
-          <div class="header-right col-xl-4 col-lg-4 col-9">
+          <div class="header-right col-xl-5 col-lg-4 col-9">
             <div class="header-right-item col-sm-3">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <div id="wrap">
+                <form action="" autocomplete="on">
+                  <input
+                    id="search"
+                    name="search"
+                    type="text"
+                    placeholder="What're you looking for ?"
+                  /><input
+                    id="search_submit"
+                    value="Rechercher"
+                    type="submit"
+                  />
+                </form>
+              </div>
               <li class="nav-login"><a href="#">Login</a></li>
 
               <button
@@ -109,7 +122,7 @@
                       <input
                         class="form-control"
                         type="search"
-                        placeholder="Search"
+                        placeholder="Search..."
                         aria-label="Search"
                       />
                     </form>
@@ -639,13 +652,20 @@
             >
             <br />
             <div class="choose-role">
-              <button class="btn-loserPet inactive" id="loserPetId">
+              <button
+                class="btn-loserPet inactive active-class"
+                id="loserPetId"
+              >
                 Loser Pet
               </button>
-              <button class="inactive" id="finderPetId">Finder Pet</button>
+              <button class="inactive active-class" id="finderPetId">
+                Finder Pet
+              </button>
 
-              <button class="inactive" id="customerId">Customer</button>
-              <button class="inactive" id="otherId">Other</button>
+              <button class="inactive active-class" id="customerId">
+                Customer
+              </button>
+              <button class="inactive active-class" id="otherId">Other</button>
             </div>
             <div class="mb-3 form-text">
               <input
@@ -798,14 +818,32 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
       $(document).ready(function () {
-        $("#loserPetId").click(function () {
-          $("#loserPetId").removeClass("active").addClass("inactive");
-          $(this).removeClass("inactive").addClass("active");
+        $(".active-class").click(function () {
+          // $("#loserPetId").removeClass("active").addClass("inactive");
+          // $(this).removeClass("inactive").addClass("active");
+          if ($(this).hasClass("active")) {
+            $(this).removeClass("active").addClass("inactive");
+          } else {
+            $(this).removeClass("inactive").addClass("active");
+          }
         });
       });
     </script>
+    </script>
+
     <script src="./js/index.js"></script>
   </body>
 </html>
