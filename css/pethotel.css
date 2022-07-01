@@ -634,6 +634,12 @@ footer .row .footer-item a:hover {
   color: #d90429;
 }
 
+@media screen and (max-width: 576px) {
+  .banner .row .banner-left .banner-content .banner-item .banner-item-left {
+    margin-right: 20px;
+  }
+}
+
 .banner .row .banner-left .banner-content .banner-item .banner-item-right {
   width: 90%;
 }
@@ -716,6 +722,12 @@ footer .row .footer-item a:hover {
 .quality .row .quality-right .quality-content .quality-item .quality-icon {
   width: 25%;
   font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .quality .row .quality-right .quality-content .quality-item .quality-icon {
+    margin-right: 20px;
+  }
 }
 
 .quality .row .quality-right .quality-content .quality-item .quality-text {
@@ -1151,7 +1163,7 @@ footer .row .footer-item a:hover {
 
 .step .row .step-text h6 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .step .row .step-text p {
@@ -1168,9 +1180,47 @@ footer .row .footer-item a:hover {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 992px) {
+  .step .row .step-top-left {
+    margin-bottom: 50px;
+  }
+}
+
 .step .row .step-top-left .step-text {
   background-color: #99d98c;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .step .row .step-top-left .step-img {
+    width: 100%;
+  }
+  .step .row .step-top-left .step-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .step .row .step-top-left .step-img {
+    width: 100%;
+  }
+  .step .row .step-top-left .step-img img {
+    width: 100%;
+  }
+}
+
+.step .row .step-top-left .step-img img {
+  border-radius: 5px;
+}
+
+.step .row .step-top-right {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .step .row .step-top-right {
+    margin-bottom: 50px;
+  }
 }
 
 .step .row .step-top-right .step-text {
@@ -1178,15 +1228,134 @@ footer .row .footer-item a:hover {
   background-color: #ffba08;
 }
 
+@media screen and (min-width: 1200px) {
+  .step .row .step-top-right .step-img {
+    width: 100%;
+  }
+  .step .row .step-top-right .step-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .step .row .step-top-right .step-img {
+    width: 100%;
+  }
+  .step .row .step-top-right .step-img img {
+    width: 100%;
+  }
+}
+
+.step .row .step-top-right .step-img img {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .step .row .step-bottom-left {
+    margin-bottom: 50px;
+  }
+}
+
 .step .row .step-bottom-left .step-text {
   margin-bottom: 10px;
-  background-color: #34a0a4;
+  background-color: #52b69a;
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .step .row .step-bottom-left .step-img {
+    width: 100%;
+  }
+  .step .row .step-bottom-left .step-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .step .row .step-bottom-left .step-img {
+    width: 100%;
+  }
+  .step .row .step-bottom-left .step-img img {
+    width: 100%;
+  }
+}
+
+.step .row .step-bottom-left .step-img img {
+  border-radius: 5px;
 }
 
 .step .row .step-bottom-right .step-text {
   margin-top: 10px;
   background-color: #eb5e28;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .step .row .step-bottom-right .step-img {
+    width: 100%;
+  }
+  .step .row .step-bottom-right .step-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .step .row .step-bottom-right .step-img {
+    width: 100%;
+  }
+  .step .row .step-bottom-right .step-img img {
+    width: 100%;
+  }
+}
+
+.step .row .step-bottom-right .step-img img {
+  border-radius: 5px;
+}
+
+.access-spa {
+  padding: 30px 0px;
+}
+
+.access-spa .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.access-spa .row .access-left {
+  width: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .access-spa .row .access-left {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+}
+
+.access-spa .row .access-left img {
+  width: 100%;
+}
+
+.access-spa .row .access-right p {
+  font-size: 25px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.access-spa .row .access-right .access-btn {
+  text-align: center;
+}
+
+.access-spa .row .access-right .access-btn a {
+  font-size: 26px;
+  color: #eb5e28;
+}
+
+.access-spa .row .access-right .access-btn a:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=pethotel.css.map */
