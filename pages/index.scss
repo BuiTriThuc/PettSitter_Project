@@ -690,6 +690,9 @@ html {
         background: $color-orange-600;
         width: 100%;
       }
+      .btn:hover {
+        opacity: 0.75;
+      }
     }
   }
 }

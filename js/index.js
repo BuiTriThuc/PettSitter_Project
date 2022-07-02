@@ -1,35 +1,43 @@
-var s = $("input"),
-  f = $("form"),
-  a = $(".after"),
-  m = $("h4");
+$(".field-petsubmitform-status").removeClass(
+  "md:w-1/2 md:float-left lg:w-1/2 lg:float-left"
+);
+$(".field-petsubmitform-secondary_status")
+  .removeClass(
+    "md:w-1/2 md:float-left md:mt-ff-15 lg:w-1/2 lg:float-left lg:mt-ff-15"
+  )
+  .hide();
 
-s.focus(function () {
-  if (f.hasClass("open")) return;
-  f.addClass("in");
-  setTimeout(function () {
-    f.addClass("open");
-    f.removeClass("in");
-  }, 1300);
-});
+jQuery("input[name='PetSubmitForm[status]']").change(function () {
+  if ($(this).val() == 100) {
+    var zipCodeText = "Zip Code Last Seen";
+    $("input[name='PetSubmitForm[pet_name]']").val("");
+    $("#petSubmitButton").html("<strong>Get Your Pet Back Home<strong>");
+    $(".foundPetTransformHeader").html("<strong>Find Your Lost Pet<strong>");
+    lostPetTextTransform();
 
-a.on("click", function (e) {
-  e.preventDefault();
-  if (!f.hasClass("open")) return;
-  s.val("");
-  f.addClass("close");
-  f.removeClass("open");
-  setTimeout(function () {
-    f.removeClass("close");
-  }, 1300);
-});
+    $(".field-petsubmitform-status").removeClass(
+      "md:w-1/2 md:float-left lg:w-1/2 lg:float-left"
+    );
+    $(".field-petsubmitform-secondary_status")
+      .removeClass(
+        "md:w-1/2 md:float-left md:mt-ff-15 lg:w-1/2 lg:float-left lg:mt-ff-15"
+      )
+      .hide();
+  } else if ($(this).val() == 101) {
+    var zipCodeText = "Zip Code Found";
+    $("input[name='PetSubmitForm[pet_name]']").val("Unknown");
+    $("#petSubmitButton").html("<strong>Get This Pet Back Home<strong>");
+    $(".foundPetTransformHeader").html("<strong>Get This Pet Home<strong>");
+    foundPetTextTransform();
 
-f.submit(function (e) {
-  e.preventDefault();
-  m.html("Thanks, high five!").addClass("show");
-  f.addClass("explode");
-  setTimeout(function () {
-    s.val("");
-    f.removeClass("explode");
-    m.removeClass("show");
-  }, 3000);
+    $(".field-petsubmitform-status").addClass(
+      "md:w-1/2 md:float-left lg:w-1/2 lg:float-left"
+    );
+    $(".field-petsubmitform-secondary_status")
+      .addClass(
+        "md:w-1/2 md:float-left md:mt-ff-15 lg:w-1/2 lg:float-left lg:mt-ff-15"
+      )
+      .show();
+  }
+  $('label[for="petsubmitform-zip_code"]').html(zipCodeText);
 });
