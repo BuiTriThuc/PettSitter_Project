@@ -248,6 +248,11 @@ form.sign-in-form {
     font-size: 3.2rem;
   }
 }
+@media screen and (max-width: 414px) {
+  .panel h3 {
+    font-size: 2.5rem;
+  }
+}
 
 .panel p {
   font-size: 2.95rem;
@@ -267,6 +272,11 @@ form.sign-in-form {
 @media screen and (max-width: 870px) {
   .panel p {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .panel p {
+    font-size: 1rem;
   }
 }
 
